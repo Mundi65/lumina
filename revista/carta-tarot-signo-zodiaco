@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>¿Qué carta del tarot es tu signo del zodiaco? · Lumina</title>
+<meta name="description" content="Descubre qué Arcano Mayor del tarot corresponde a tu signo del zodiaco y qué revela sobre tu esencia más profunda. ¡Conoce tu carta!" />
+<meta name="keywords" content="carta del tarot por signo zodiacal, arcanos mayores y zodiaco, tarot y astrología, tarot rider waite signos" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 40%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;line-height:1.8;font-weight:300}
+  nav{border-bottom:1px solid var(--line);position:sticky;top:0;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);z-index:10}
+  nav .in{max-width:760px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .logo .m{color:var(--gold)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  article{max-width:760px;margin:0 auto;padding:54px 24px 40px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,46px);font-weight:600;line-height:1.12;
+    background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .meta{color:var(--muted);font-style:italic;font-size:16px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:34px 0 12px;font-weight:600}
+  p{margin-bottom:16px;color:#e7e3f4;font-size:17px}
+  ul{margin:0 0 16px 24px;color:#e7e3f4}
+  li{margin-bottom:6px}
+  .cta{background:rgba(216,180,106,.07);border:1px dashed var(--line);border-radius:18px;padding:30px;text-align:center;margin-top:44px}
+  .cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-soft);margin-bottom:10px}
+  .cta a{display:inline-block;margin-top:16px;padding:14px 28px;border-radius:40px;color:#1a1430;font-weight:600;
+    text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:18px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 8px 24px rgba(216,180,106,.3)}
+  footer{border-top:1px solid var(--line);max-width:760px;margin:40px auto 0;padding:28px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="https://mundi65.github.io/lumina/" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="https://mundi65.github.io/lumina/">← Volver al inicio</a>
+</div></nav>
+<article>
+  <h1>¿Qué carta del tarot es tu signo del zodiaco?</h1>
+  <div class="meta">Descubre qué Arcano Mayor del tarot corresponde a tu signo del zodiaco y qué revela sobre tu esencia más profunda. ¡Conoce tu carta!</div>
+  <p>Hay un momento en que el zodiaco y el tarot dejan de ser dos lenguajes separados y revelan que siempre hablaron el mismo idioma. Desde el siglo XIX, los grandes maestros de la tradición hermética tejieron un sistema donde cada signo del cielo tiene su espejo exacto en el mazo: una carta que captura tu esencia arquetípica, tus sombras, tus dones y el camino que los astros trazan para ti. Descubrir cuál es la tuya no es solo curiosidad —es encontrarte cara a cara con el símbolo que mejor describe quién eres y hacia dónde vas.</p>
+<h2>El puente secreto entre el tarot y la astrología: ¿cómo nació esta correspondencia?</h2>
+<p>Mucho antes de que el tarot y la astrología se fundieran en el sistema que hoy conocemos, ambas tradiciones ya compartían un ancestro común: los 36 decanos del zodiaco, una división del cielo que los astrólogos del mundo antiguo utilizaban para leer los destinos con precisión quirúrgica. Cada signo se divide en tres segmentos de diez grados, y a cada uno corresponde un planeta regente, un símbolo visual y una cualidad energética particular. Esas imágenes decánicas fueron, precisamente, el puente.</p><p>La fusión explícita ocurrió en el siglo XIX tardío, cuando la Orden Hermética de la Aurora Dorada —una sociedad ocultista británica activa entre 1888 y aproximadamente 1900— se propuso algo extraordinariamente ambicioso: unificar en un solo mapa simbólico la Cábala, el Hermetismo, la astrología y el tarot. Sus iniciados —entre ellos S.L. MacGregor Mathers, William Wynn Westcott, Arthur Edward Waite y Aleister Crowley— asignaron a cada Arcano Mayor una letra hebrea, un camino en el Árbol de la Vida y una correspondencia astrológica precisa. Los Arcanos Menores, a su vez, quedaron mapeados sobre los 36 decanos.</p><p>El resultado fue un lenguaje esotérico coherente donde cada carta habla, simultáneamente, el idioma de los astros y el de los símbolos. No es coincidencia: es arquitectura sagrada deliberada. Y es esa arquitectura la que hoy te permite reconocerte en una carta como si fuera un espejo.</p>
+<h2>Los 12 signos del zodiaco y sus Arcanos Mayores: significado y simbolismo de cada carta</h2>
+<p>Cada uno de los doce signos del zodiaco encuentra su espejo simbólico en un Arcano Mayor del tarot, correspondencia que no es caprichosa ni decorativa: nació del trabajo riguroso de los iniciados de la Hermetic Order of the Golden Dawn, quienes entre 1888 y aproximadamente 1900 tejieron astrología, Cábala y tarot en un sistema esotérico coherente. A cada carta le fue asignada una letra hebrea, un camino en el Árbol de la Vida y una energía zodiacal precisa. El resultado es un alfabeto doble: el cielo habla en constelaciones, el tarot lo traduce en imágenes.</p><p>Las correspondencias, siguiendo el sistema Rider-Waite, son las siguientes:</p><ul><li>**Aries** → El Emperador (IV): voluntad que ordena el caos.</li><li>**Tauro** → El Hierofante (V): tradición que nutre la materia.</li><li>**Géminis** → Los Enamorados (VI): el eterno dualismo que elige.</li><li>**Cáncer** → El Carro (VII): la emoción que conquista en silencio.</li><li>**Leo** → La Fuerza (VIII): el corazón que doma sin violencia.</li><li>**Virgo** → El Ermitaño (IX): la sabiduría que se afina en soledad.</li><li>**Libra** → La Justicia (XI): el equilibrio que pesa con alma.</li><li>**Escorpio** → La Muerte (XIII): la transformación inevitable y necesaria.</li><li>**Sagitario** → La Templanza (XIV): la flecha dirigida hacia lo absoluto.</li><li>**Capricornio** → El Diablo (XV): la materia que encadena o libera.</li><li>**Acuario** → La Estrella (XVII): la visión que trasciende el tiempo.</li><li>**Piscis** → La Luna (XVIII): el sueño que disuelve toda frontera.</li></ul><p>Leer tu carta no es recibir un veredicto: es contemplar el arquetipo que los astros colocaron en tu centro. Los astros inclinan; tú decides cómo honrar esa energía.</p>
+<h2>¿Cómo leer tu carta del tarot según tu signo? Claves para la reflexión personal</h2>
+<p>Cada carta que corresponde a tu signo es, en esencia, un espejo simbólico: no te dice lo que harás, sino lo que eres en potencia. La Aurora Dorada construyó estas correspondencias con una lógica precisa —cada Arcano Mayor recibió una letra hebrea, un camino en el Árbol de la Vida y una energía astrológica— de modo que la carta no es un adorno decorativo, sino una destilación de las cualidades más profundas de tu signo.</p><p>Para trabajar con tu carta, comienza por observarla en silencio. Pregúntate:</p><ul><li>¿Qué figura o símbolo te llama primero la atención, y por qué?</li><li>¿La energía que transmite te resulta familiar… o incómoda?</li><li>¿En qué área de tu vida sientes que esa cualidad está activa ahora mismo?</li></ul><p>La incomodidad, cuando aparece, es tan valiosa como el reconocimiento: señala exactamente el territorio interior que espera ser explorado.</p><p>Luego ve a la astrología del arcano. Si tu carta rige a Leo, por ejemplo, medita sobre el principio solar: voluntad, creatividad, el deseo de ser visto. Si rige a Escorpio, desciende a las capas más densas: transformación, poder, lo que se oculta bajo la superficie.</p><p>Recuerda siempre que los astros inclinan, no obligan. Tu carta no es un destino sellado; es una invitación a conocerte con mayor profundidad y a elegir, desde ese conocimiento, con mayor libertad.</p>
+<h2>Más allá del signo solar: decanos, palos y la profundidad del sistema tarot-astrología</h2>
+<p>El zodiaco antiguo no solo se divide en doce signos: cada uno se subdivide en tres **decanos** de diez grados, heredados de la astronomía egipcia y babilónica. Estos treinta y seis sectores celestes fueron el primer sistema de correspondencias entre cielo y carta, mucho antes de que la Aurora Dorada sintetizara tarot y astrología en un lenguaje unificado.</p><p>En el Tarot Rider-Waite, esa herencia persiste con precisión notable. Los 36 Arcanos Menores numerados —del As al Diez, excluyendo las cartas de corte— se distribuyen entre los treinta y seis decanos del zodiaco. Así, el Dos de Copas no es simplemente "una carta de relaciones": es Cáncer en su primer decano, impregnado de la sensibilidad lunar inaugural del signo. El Diez de Espadas no es solo derrota: es Géminis en su tercer decano, el agotamiento final del ciclo aéreo.</p><p>Los cuatro palos añaden otra capa de lectura:</p><ul><li>**Copas** vibra con los signos de agua: Cáncer, Escorpio, Piscis.</li><li>**Bastos** arde con los signos de fuego: Aries, Leo, Sagitario.</li><li>**Espadas** piensa con los signos de aire: Géminis, Libra, Acuario.</li><li>**Pentáculos** construye con los signos de tierra: Tauro, Virgo, Capricornio.</li></ul><p>Las cartas de corte —Sota, Caballero, Reina y Rey— representan umbrales entre decanos, encarnando arquetipos que transitan entre un elemento y el siguiente.</p><p>El resultado es un mapa celeste completo dentro de una sola baraja: cada carta, un coordenada en el cielo simbólico.</p>
+<h2>Para cerrar</h2>
+<p>El tarot y el zodíaco no son dos lenguajes separados: son dos dialectos de la misma lengua sagrada que el cosmos habla sobre ti. Conocer la carta que te pertenece es apenas la primera puerta — detrás de ella aguarda un mapa completo de tus dones, tus sombras y el arco luminoso de tu destino. Permite que esta correspondencia no sea un dato curioso, sino una invitación: la de mirarte con los ojos simbólicos que los cielos llevan siglos afinando para nombrarte. *Los astros inclinan, no obligan* — y en esa libertad, querida alma, reside toda la magia.</p>
+
+  <div class="cta">
+    <h3>✦ Descubre tu propio cielo</h3>
+    <p>Tu carta natal guarda respuestas que solo tú puedes leer. Calcúlala gratis al instante y recibe tu horóscopo diario por WhatsApp.</p>
+    <a href="https://mundi65.github.io/lumina/">✦ Calcular mi carta natal gratis →</a>
+  </div>
+</article>
+<footer>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico. Los astros inclinan, no obligan.<br>© 2026 Lumina · DIGIWAV
+</footer>
+</body>
+</html>
