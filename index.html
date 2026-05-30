@@ -122,12 +122,22 @@
   .art{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:18px;overflow:hidden;
     transition:transform .2s,border-color .2s;cursor:pointer}
   .art:hover{transform:translateY(-5px);border-color:var(--gold)}
-  .art .cover{height:130px;display:flex;align-items:center;justify-content:center;font-size:46px;color:var(--gold);
-    background:radial-gradient(circle at 50% 20%,#2a2258,#0c0a25)}
+  .art .cover{height:150px;display:flex;align-items:center;justify-content:center;font-size:78px;color:var(--gold);
+    background:radial-gradient(circle at 50% 25%,#2a2258,#0c0a25);text-shadow:0 0 26px rgba(216,180,106,.5);transition:transform .25s}
+  .art:hover .cover{transform:scale(1.06)}
   .art .body{padding:18px}
   .art .cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
   .art h4{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.25;margin-bottom:8px}
   .art p{color:var(--muted);font-weight:300;font-size:13.5px}
+  /* tarot trio */
+  .lum-cover{position:relative;display:flex;justify-content:center;margin:0 0 54px}
+  .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:320px;background:radial-gradient(ellipse,rgba(216,180,106,.14),transparent 70%);pointer-events:none}
+  .lum-trio{position:relative;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 14px 34px rgba(0,0,0,.6))}
+  .lum-tc{width:150px}.lum-tc svg{width:100%;height:auto;display:block}
+  .lum-tc.left{transform:rotate(-10deg) translateY(12px);margin-right:-30px;z-index:1}
+  .lum-tc.right{transform:rotate(10deg) translateY(12px);margin-left:-30px;z-index:1}
+  .lum-tc.center{z-index:2;transform:translateY(-10px) scale(1.08)}
+  @media(max-width:560px){.lum-tc{width:98px}}
   /* testimonials */
   .tests{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .test{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:18px;padding:26px}
@@ -262,6 +272,7 @@
       <h2>Sabiduría que ilumina</h2>
       <p>Artículos para iniciados y curiosos. Aprende a leer tu cielo y comprende el lenguaje de los símbolos.</p>
     </div>
+    <div id="lumTrio" class="lum-cover reveal-on-scroll"></div>
     <div class="mag">
       <a class="art reveal-on-scroll" href="revista/luna-natal-como-amas-signo-lunar.html"><div class="cover">☽</div><div class="body"><div class="cat">Astrología</div><h4 class="serif">Qué revela tu Luna sobre cómo amas</h4><p>El astro más íntimo de tu carta y el mapa secreto de tus emociones.</p></div></a>
       <a class="art reveal-on-scroll" href="revista/carta-tarot-signo-zodiaco.html"><div class="cover">⚝</div><div class="body"><div class="cat">Tarot</div><h4 class="serif">¿Qué carta del tarot corresponde a tu signo?</h4><p>Cada signo guarda un arcano que lo refleja. Descubre el tuyo.</p></div></a>
@@ -382,6 +393,18 @@
   // ---- scroll reveal ----
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
   document.querySelectorAll('.reveal-on-scroll').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el)});
+
+  // ---- trío de cartas de tarot (arte vectorial) ----
+  (function(){
+    function star(cx,cy,r,fill,pts){pts=pts||4;var v=pts*2,o=[];for(var i=0;i<v;i++){var ang=(i*(360/v)-90)*Math.PI/180,rr=(i%2===0)?r:r*0.42;o.push((cx+Math.cos(ang)*rr).toFixed(1)+','+(cy+Math.sin(ang)*rr).toFixed(1));}return '<polygon points="'+o.join(' ')+'" fill="'+fill+'"/>';}
+    function card(type){var title,num,mid="";
+      if(type==="sol"){title="EL SOL";num="XIX";var rays="";for(var a=0;a<12;a++){var ang=a*30*Math.PI/180,x1=90+Math.cos(ang)*40,y1=132+Math.sin(ang)*40,x2=90+Math.cos(ang)*60,y2=132+Math.sin(ang)*60;rays+='<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" stroke="#d8b46a" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.85"/>';}mid=rays+'<circle cx="90" cy="132" r="32" fill="url(#sun_'+type+')"/>';}
+      else if(type==="estrella"){title="LA ESTRELLA";num="XVII";mid=star(90,120,36,'url(#sun_'+type+')',8)+star(48,92,9,'#d8b46a')+star(134,98,9,'#d8b46a')+star(58,172,7,'#d8b46a')+star(126,170,7,'#d8b46a')+star(90,200,8,'#d8b46a');}
+      else{title="LA LUNA";num="XVIII";mid='<mask id="cm_'+type+'"><rect x="0" y="0" width="180" height="280" fill="white"/><circle cx="104" cy="118" r="30" fill="black"/></mask><circle cx="90" cy="128" r="34" fill="url(#sun_'+type+')" mask="url(#cm_'+type+')"/>'+star(122,82,8,'#d8b46a')+star(54,168,7,'#d8b46a')+star(132,170,6,'#d8b46a')+star(70,96,5,'#d8b46a');}
+      return '<svg viewBox="0 0 180 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg_'+type+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#241a52"/><stop offset="100%" stop-color="#0c0a25"/></linearGradient><radialGradient id="sun_'+type+'" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#fff8e6"/><stop offset="50%" stop-color="#d8b46a"/><stop offset="100%" stop-color="#7a5e28"/></radialGradient></defs><rect x="3" y="3" width="174" height="274" rx="16" fill="url(#bg_'+type+')" stroke="#d8b46a" stroke-width="2"/><rect x="11" y="11" width="158" height="258" rx="10" fill="none" stroke="#d8b46a" stroke-opacity="0.45" stroke-width="1"/><text x="90" y="42" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="14" letter-spacing="1.5">'+title+'</text>'+mid+'<text x="90" y="252" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="18" letter-spacing="3">'+num+'</text></svg>';}
+    var t=document.getElementById('lumTrio');
+    if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left">'+card("luna")+'</div><div class="lum-tc center">'+card("estrella")+'</div><div class="lum-tc right">'+card("sol")+'</div></div>';
+  })();
 
   // ---- ephemeris (Schlyter, exacto para signos) ----
   const D2R=Math.PI/180,R2D=180/Math.PI;
