@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cristales y cuarzos: elige el ideal según tu intención · Lumina</title>
+<meta name="description" content="Descubre qué cristal o cuarzo elegir según tu intención. Guía mística y fundamentada para amor, abundancia, protección y claridad mental." />
+<meta name="keywords" content="cristales y cuarzos, qué cristal elegir, cristales según intención, propiedades de los cuarzos" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 40%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;line-height:1.8;font-weight:300}
+  nav{border-bottom:1px solid var(--line);position:sticky;top:0;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);z-index:10}
+  nav .in{max-width:760px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .logo .m{color:var(--gold)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  article{max-width:760px;margin:0 auto;padding:54px 24px 40px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,46px);font-weight:600;line-height:1.12;
+    background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .meta{color:var(--muted);font-style:italic;font-size:16px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:34px 0 12px;font-weight:600}
+  p{margin-bottom:16px;color:#e7e3f4;font-size:17px}
+  ul{margin:0 0 16px 24px;color:#e7e3f4}
+  li{margin-bottom:6px}
+  .cta{background:rgba(216,180,106,.07);border:1px dashed var(--line);border-radius:18px;padding:30px;text-align:center;margin-top:44px}
+  .cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-soft);margin-bottom:10px}
+  .cta a{display:inline-block;margin-top:16px;padding:14px 28px;border-radius:40px;color:#1a1430;font-weight:600;
+    text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:18px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 8px 24px rgba(216,180,106,.3)}
+  footer{border-top:1px solid var(--line);max-width:760px;margin:40px auto 0;padding:28px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="https://mundi65.github.io/lumina/" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="https://mundi65.github.io/lumina/">← Volver al inicio</a>
+</div></nav>
+<article>
+  <h1>Cristales y cuarzos: elige el ideal según tu intención</h1>
+  <div class="meta">Descubre qué cristal o cuarzo elegir según tu intención. Guía mística y fundamentada para amor, abundancia, protección y claridad mental.</div>
+  <p>Desde tiempos inmemoriales, la humanidad ha sentido el llamado silencioso de las piedras: esa certeza visceral de que algo en ellas *vibra*, que su belleza no es accidental sino cargada de sentido. Los cristales y cuarzos no son simples minerales formados a lo largo de millones de años en las entrañas de la Tierra; son guardianes de intención, espejos de nuestro mundo interior y aliados poderosos cuando sabemos elegirlos con consciencia. Porque la pregunta no es si los cristales tienen algo que ofrecer, sino si tú estás listo para recibirlo. Aquí descubrirás cómo alinear cada piedra con tu propósito más profundo, y por qué esa elección lo cambia todo.</p>
+<h2>Cristales y cuarzos: qué son, de dónde vienen y por qué fascinan desde la antigüedad</h2>
+<p>Antes de que la primera civilización trazara sus símbolos en piedra, la Tierra ya guardaba en sus entrañas estos mensajes cristalizados. Los cuarzos son minerales compuestos de dióxido de silicio (SiO₂), uno de los elementos más abundantes de la corteza terrestre. Se forman cuando soluciones acuosas ricas en silicio penetran cavidades y grietas subterráneas y allí, en la oscuridad y la presión, cristalizan durante millones de años. Tiempo hecho geometría. Luz hecha materia.</p><p>La palabra *cristal* proviene del griego *krystallos*: "hielo líquido". Los romanos, fascinados por su transparencia, creían literalmente que el cuarzo transparente era hielo eterno, y lo usaban para enfriar bebidas. Los griegos y los egipcios fueron más lejos: tallaban joyas, copas y amuletos en lapislázuli, jade y cuarzo, convencidos de que esas piedras canalizaban fuerzas que ningún medicamento podía alcanzar.</p><p>Ya en el siglo V a.C. se recomendaba portar piedras específicas para contrarrestar la influencia negativa de los planetas, reconociendo así una correspondencia entre el cielo y la tierra que la astrología también habita.</p><p>Hoy la ciencia confirma su singularidad: los cristales de cuarzo exhiben el llamado efecto piezoeléctrico —generan corriente eléctrica bajo presión— y son componentes esenciales en relojes, sensores y equipos de ultrasonido. Vibran, literalmente. Quizás por eso el alma humana los ha sentido vivos desde siempre.</p>
+<h2>Las intenciones más comunes y qué cristal resuena con cada una</h2>
+<p>Antes de elegir un cristal, el primer paso es siempre el más íntimo: preguntarte qué deseas convocar. Los minerales no actúan como atajos mágicos, sino como espejos simbólicos que amplifican aquello que ya late en ti. La intención es la brújula; el cristal, el viento.</p><p>Algunas de las intenciones más frecuentes y sus aliados minerales:</p><ul><li>**Amor propio y relaciones:** la rosa cuarzo, con su delicada vibración venusina, invita a abrir el chakra del corazón y soltar resistencias emocionales.</li><li>**Claridad mental y estudio:** el cuarzo transparente, llamado "el maestro" en muchas tradiciones, armoniza todos los centros energéticos y despeja la niebla del pensamiento confuso.</li><li>**Prosperidad y abundancia:** el citrino —conocido históricamente en el Medio Oriente como la piedra de los mercaderes— resuena con la energía solar y la voluntad creadora.</li><li>**Protección y límites:** la turmalina negra actúa como escudo que ancla la energía terrestre y desvuelve lo que no te pertenece.</li><li>**Intuición y espiritualidad:** la amatista, de naturaleza saturnina y neptuniana a la vez, aquieta la mente racional para que emerja la voz más profunda.</li></ul><p>Recuerda: los astros inclinan, pero eres tú quien decide. El cristal ideal no siempre es el más bello; es el que responde a tu llamado interior.</p>
+<h2>Cómo activar, limpiar y cargar tus cristales para potenciar su energía</h2>
+<p>Antes de que un cristal pueda trabajar contigo, necesita ser *tuyo*: limpio de energías ajenas y despertado con una intención clara. Los minerales, como esponjas vibratorias que son, absorben las frecuencias de cuantas manos los tocaron antes de llegar a las tuyas.</p><p>La limpieza es el primer paso. Puedes pasarlos por humo de salvia o palo santo —ambos tienen una larga tradición purificadora en culturas amerindias y mediterráneas—, enterrarlos brevemente en sal marina gruesa, o dejarlos bajo el agua corriente natural si su composición lo permite (el cuarzo transparente la tolera bien; la selenita y la malaquita, no).</p><p>La carga es el segundo acto. Aquí el cielo se convierte en tu aliado: la luz de la luna llena es el método más universal, pues la luna rige las mareas emocionales y amplifica la receptividad energética de los minerales. Los eclipses lunares de 2025 —hay dos totales este año— son momentos de transformación especialmente potentes para reconfigurar la intención de una piedra.</p><p>Finalmente, la **activación**: sostén el cristal entre tus palmas, respira con profundidad y pronuncia —en voz alta o mentalmente— la intención específica que le confías. Los astros inclinan, la intención dirige. Tú eres siempre el canal principal.</p>
+<h2>Rituales con cristales según el calendario lunar 2025</h2>
+<p>El cielo no es un decorado: es un reloj vivo que calibra la energía disponible en cada momento. Y los cristales, como antenas de silicio cristalizado, responden a esa vibración con una sensibilidad que la ciencia comienza a documentar —el efecto piezoeléctrico ya nos revela que la presión genera corriente en el cuarzo— y que las tradiciones antiguas intuían desde hace milenios.</p><p>En 2025, el calendario lunar ofrece doce lunas llenas, tres de ellas superlunas —cuando la Luna se encuentra en el punto más cercano a la Tierra y su influencia magnética se amplifica notablemente— y dos eclipses lunares totales, conocidos como Lunas de Sangre, cuya primera manifestación ocurrió entre el 13 y el 14 del primer mes del año.</p><p>Algunos momentos clave para trabajar con tus cristales:</p><ul><li>**Luna nueva:** ideal para programar intenciones. Coloca tu cristal bajo la luz nocturna y declara en voz alta lo que deseas invocar.</li><li>**Luna llena y superluna:** momento óptimo para cargar y limpiar. El agua de luna potencia cualquier cuarzo, especialmente el transparente y la amatista.</li><li>**Eclipse lunar:** pausa ritual. Los eclipses remueven lo que está listo para liberarse; aprovéchalos con turmalina negra o obsidiana para soltar, no para manifestar.</li></ul><p>Los astros inclinan la energía; tus cristales la conducen.</p>
+<h2>Para cerrar</h2>
+<p>El cristal que te llama no es una coincidencia: es el lenguaje silencioso de tu carta natal resonando con la geometría de la tierra. Así como cada planeta rige un metal y una piedra desde la antigüedad hermética, tu intención de hoy sintoniza con la frecuencia exacta que necesitas transitar. Permítete explorar, sostener, observar —porque en esa pequeña pieza de cuarzo que descansa en tu palma se condensan millones de años de sabiduría mineral esperando encontrar tu historia.</p>
+
+  <div class="cta">
+    <h3>✦ Descubre tu propio cielo</h3>
+    <p>Tu carta natal guarda respuestas que solo tú puedes leer. Calcúlala gratis al instante y recibe tu horóscopo diario por WhatsApp.</p>
+    <a href="https://mundi65.github.io/lumina/">✦ Calcular mi carta natal gratis →</a>
+  </div>
+</article>
+<footer>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico. Los astros inclinan, no obligan.<br>© 2026 Lumina · DIGIWAV
+</footer>
+</body>
+</html>
