@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tu Luna natal revela cómo amas: descúbrelo aquí · Lumina</title>
+<meta name="description" content="Tu Luna natal muestra tu mundo emocional y cómo amas. Descubre qué revela cada signo lunar sobre tus vínculos afectivos más profundos." />
+<meta name="keywords" content="luna natal, signo lunar, cómo amas según la astrología, luna en la carta natal" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 40%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;line-height:1.8;font-weight:300}
+  nav{border-bottom:1px solid var(--line);position:sticky;top:0;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);z-index:10}
+  nav .in{max-width:760px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .logo .m{color:var(--gold)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  article{max-width:760px;margin:0 auto;padding:54px 24px 40px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,46px);font-weight:600;line-height:1.12;
+    background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .meta{color:var(--muted);font-style:italic;font-size:16px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:34px 0 12px;font-weight:600}
+  p{margin-bottom:16px;color:#e7e3f4;font-size:17px}
+  ul{margin:0 0 16px 24px;color:#e7e3f4}
+  li{margin-bottom:6px}
+  .cta{background:rgba(216,180,106,.07);border:1px dashed var(--line);border-radius:18px;padding:30px;text-align:center;margin-top:44px}
+  .cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-soft);margin-bottom:10px}
+  .cta a{display:inline-block;margin-top:16px;padding:14px 28px;border-radius:40px;color:#1a1430;font-weight:600;
+    text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:18px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 8px 24px rgba(216,180,106,.3)}
+  footer{border-top:1px solid var(--line);max-width:760px;margin:40px auto 0;padding:28px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="https://mundi65.github.io/lumina/" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="https://mundi65.github.io/lumina/">← Volver al inicio</a>
+</div></nav>
+<article>
+  <h1>Tu Luna natal revela cómo amas: descúbrelo aquí</h1>
+  <div class="meta">Tu Luna natal muestra tu mundo emocional y cómo amas. Descubre qué revela cada signo lunar sobre tus vínculos afectivos más profundos.</div>
+  <p>Desde que los sacerdotes babilonios tallaron el primer horóscopo individual en tablillas de arcilla —allá por el 410 a. C.— la humanidad supo que el cielo guarda el mapa de nuestra vida interior. De todos los cuerpos celestes que habitan esa carta, ninguno habla tan íntimamente como la Luna: ella rige las mareas, sí, pero también rige lo que sientes antes de encontrar las palabras para decirlo. Tu Luna natal —el signo que ocupaba la Luna en el momento exacto en que llegaste al mundo— es el espejo más honesto de tu mundo emocional, el que revela cómo necesitas amar y, sobre todo, cómo necesitas ser amado. Si alguna vez sentiste que tu forma de querer no encajaba del todo en la descripción de tu signo solar, aquí encontrarás la pieza que faltaba.</p>
+<h2>Qué es la Luna natal y por qué define tu vida emocional</h2>
+<p>Antes de que aprendieras a hablar, ya sentías. Esa capacidad primordial —recibir el mundo a través de la emoción, buscar cobijo, responder al tacto y a la voz— lleva la firma de tu Luna natal: el signo del zodíaco que ocupaba la Luna en el cielo exacto en que naciste.</p><p>La astrología natal, que los babilonios comenzaron a sistematizar hace más de dos milenios y cuyo horóscopo individual más antiguo data del 410 a. C., identificó muy pronto que la Luna —por su velocidad, su cercanía y su ciclo perpetuo de muerte y renacimiento— era el espejo del alma interior. Cuando la tradición helenística refinó estas ideas, alrededor del siglo II a. C., la Luna quedó consagrada como la regente de la naturaleza emocional en la carta natal.</p><p>¿Por qué define tu vida afectiva? Porque señala el modo en que *procesas* lo que sientes, lo que necesitas para sentirte seguro y, en consecuencia, cómo amas. No con la voluntad solar o la razón mercurial, sino desde ese lugar más hondo e instintivo donde viven el apego, la nostalgia y el deseo de pertenencia.</p><p>Los astros inclinan; no obligan. Pero conocer tu Luna natal es iluminar el territorio emocional que recorres cada vez que alguien toca tu corazón.</p>
+<h2>Tu signo lunar: el espejo secreto de tus necesidades afectivas</h2>
+<p>Antes de que aprendas a decir "te amo", tu Luna natal ya sabe cómo necesitas ser amado. Este astro —llamado *Selene* por los griegos, *Luna* por los romanos— rige en la carta natal todo aquello que no se muestra en la primera mirada: los ritmos internos, los refugios emocionales, la forma en que buscas seguridad en otro ser humano. Porque la Luna no habla del amor que declaras; habla del amor que *requieres*.</p><p>En astrología psicológica —tradición que Liz Greene y Howard Sasportas consolidaron en *The Luminaries* (1992)— la Luna representa la memoria emocional más profunda, el patrón que aprendiste antes de tener palabras para describirlo. Su signo en tu carta natal actúa como un espejo: te devuelve la imagen de tus necesidades afectivas reales, aquellas que a veces ni tú misma reconoces conscientemente.</p><p>Conocer tu signo lunar te ofrece algo concreto:</p><ul><li>entender qué tipo de presencia emocional te nutre</li><li>identificar qué ausencias te duelen de forma desproporcionada</li><li>comprender por qué reaccionas como reaccionas en la intimidad</li></ul><p>Recuerda que para precisar tu Luna natal necesitas fecha, hora y lugar de nacimiento exactos, pues este astro cambia de signo cada dos días y medio. Los astros inclinan, no obligan; pero conocerlos es, sin duda, un acto de amor propio.</p>
+<h2>Luna en cada signo: patrones de amor que necesitas conocer</h2>
+<p>Cada signo imprime en la Luna una textura emocional distinta, un idioma secreto con el que el corazón aprende a dar y a recibir. Conocer el tuyo no es curiosidad trivial: es cartografía del alma.</p><ul><li>**Luna en Aries** ama con urgencia y sin rodeos; necesita la chispa del inicio tanto como el aire.</li><li>**Luna en Tauro** —exaltada aquí, en su máxima potencia— ofrece lealtad sensorial y constancia que el tiempo no erosiona.</li><li>**Luna en Géminis** nutre con palabras e ideas; la conversación *es* su intimidad.</li><li>**Luna en Cáncer** —en domicilio, su territorio natural— ama con la marea entera: protege, recuerda y siente con profundidad oceánica.</li><li>**Luna en Leo** requiere ser vista y celebrada; su generosidad es proporcional al reconocimiento que recibe.</li><li>**Luna en Virgo** expresa amor a través del servicio preciso y el cuidado concreto, no del gesto grandilocuente.</li><li>**Luna en Libra** busca la armonía como condición de intimidad; el conflicto no resuelto la desequilibra emocionalmente.</li><li>**Luna en Escorpio** —en caída, terreno de máxima tensión— ama con intensidad que transforma o que consume; no hay término medio.</li><li>**Luna en Sagitario** necesita que el amor expanda su horizonte, nunca que lo limite.</li><li>**Luna en Capricornio** —en detrimento— construye afecto con hechos, no con promesas; su ternura es discreta pero duradera.</li><li>**Luna en Acuario** ama desde la amistad y la libertad; la posesividad la distancia.</li><li>**Luna en Piscis** se disuelve en el otro; su reto es amar sin perder sus propios contornos.</li></ul><p>Los astros inclinan; tú decides cómo navegar esa corriente.</p>
+<h2>Cómo trabajar con tu Luna natal para amar con más consciencia</h2>
+<p>Conocer tu Luna natal no es solo un ejercicio de introspección: es un acto de compasión hacia ti misma. Cuando reconoces que tu Luna en Escorpio necesita profundidad o que tu Luna en Géminis se nutre del diálogo constante, dejas de juzgar tus patrones emocionales como defectos y empiezas a verlos como lenguajes del alma.</p><p>El primer paso es localizar tu Luna en la carta natal —para eso necesitas fecha, hora y lugar exactos de nacimiento, pues este astro cambia de signo cada dos días y medio—. Luego, observa sin prisa:</p><ul><li>¿Qué necesitas para sentirte segura en una relación?</li><li>¿Cómo reaccionas cuando alguien cruza tu umbral emocional?</li><li>¿Qué te hace sentir verdaderamente amada, más allá de lo que crees que "deberías" querer?</li></ul><p>La revolución lunar —ese momento cada veintisiete o veintiocho días en que la Luna regresa a su posición natal— es un umbral natural para la revisión emocional: una pequeña luna nueva personal donde puedes preguntarte si estás amando desde el miedo o desde la plenitud.</p><p>Los astros inclinan, nunca obligan. Tu Luna natal no es un destino: es un mapa. Y los mapas existen para que elijas, con mayor consciencia, el camino.</p>
+<h2>Para cerrar</h2>
+<p>Conocer tu Luna natal no es solo aprender astrología: es reconocerte en el espejo más íntimo del zodíaco, ese que refleja no lo que muestras al mundo, sino lo que ansías recibir cuando te permites ser vulnerable. Cada signo, cada casa, cada aspecto lunar es una clave que ya vivías sin nombre. ¿Qué otras verdades aguardan en tu carta natal, esperando que alguien —o tú mismo— se atreva a leerlas? El cielo que te vio nacer tiene mucho más que contarte.</p>
+
+  <div class="cta">
+    <h3>✦ Descubre tu propio cielo</h3>
+    <p>Tu carta natal guarda respuestas que solo tú puedes leer. Calcúlala gratis al instante y recibe tu horóscopo diario por WhatsApp.</p>
+    <a href="https://mundi65.github.io/lumina/">✦ Calcular mi carta natal gratis →</a>
+  </div>
+</article>
+<footer>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico. Los astros inclinan, no obligan.<br>© 2026 Lumina · DIGIWAV
+</footer>
+</body>
+</html>
