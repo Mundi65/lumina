@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sinastría: la verdad sobre la compatibilidad entre signos · Lumina</title>
+<meta name="description" content="Descubre qué es la sinastría, cómo se interpreta la compatibilidad astrológica entre signos y por qué los astros inclinan pero no obligan en el amor." />
+<meta name="keywords" content="sinastría astrológica, compatibilidad entre signos, carta natal compatibilidad, astrología y amor" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 40%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;line-height:1.8;font-weight:300}
+  nav{border-bottom:1px solid var(--line);position:sticky;top:0;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);z-index:10}
+  nav .in{max-width:760px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .logo .m{color:var(--gold)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  article{max-width:760px;margin:0 auto;padding:54px 24px 40px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,46px);font-weight:600;line-height:1.12;
+    background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .meta{color:var(--muted);font-style:italic;font-size:16px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:34px 0 12px;font-weight:600}
+  p{margin-bottom:16px;color:#e7e3f4;font-size:17px}
+  ul{margin:0 0 16px 24px;color:#e7e3f4}
+  li{margin-bottom:6px}
+  .cta{background:rgba(216,180,106,.07);border:1px dashed var(--line);border-radius:18px;padding:30px;text-align:center;margin-top:44px}
+  .cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-soft);margin-bottom:10px}
+  .cta a{display:inline-block;margin-top:16px;padding:14px 28px;border-radius:40px;color:#1a1430;font-weight:600;
+    text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:18px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 8px 24px rgba(216,180,106,.3)}
+  footer{border-top:1px solid var(--line);max-width:760px;margin:40px auto 0;padding:28px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="https://mundi65.github.io/lumina/" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="https://mundi65.github.io/lumina/">← Volver al inicio</a>
+</div></nav>
+<article>
+  <h1>Sinastría: la verdad sobre la compatibilidad entre signos</h1>
+  <div class="meta">Descubre qué es la sinastría, cómo se interpreta la compatibilidad astrológica entre signos y por qué los astros inclinan pero no obligan en el amor.</div>
+  <p>Dos cartas natales, miles de posibilidades: cuando los cielos de dos personas se superponen, emerge un mapa invisible que los astrólogos llevan leyendo desde Babilonia. La **sinastría** —del griego *syn* ("junto") y *ástron* ("estrella"), literalmente "juntar las estrellas"— no es magia de almanaque ni compatibilidad de sol a sol: es el análisis profundo de cómo los planetas de una persona activan, tensionan o armonizan los de otra. Aquí no encontrarás promesas absolutas, porque los astros inclinan sin obligar; sí encontrarás las claves simbólicas y técnicas que los astrólogos han utilizado desde el *Tetrabiblos* de Ptolomeo hasta hoy para entender por qué con ciertas personas el alma reconoce algo, y con otras, choca sin remedio.</p>
+<h2>Qué es la sinastría: el arte milenario de juntar las estrellas</h2>
+<p>Cuando dos personas se encuentran, el cielo ya guardaba memoria de ese momento. La sinastría —del griego *syn* ("junto") y *ástron* ("estrella")— es literalmente el arte de *juntar las estrellas*: la técnica astrológica que superpone dos cartas natales para revelar cómo los planetas de una persona resuenan, friccionan o amplifican los de otra.</p><p>No es magia nueva. Babilonia, Grecia y Egipto la practicaban como ciencia seria, no como entretenimiento. Los gobernantes romanos y renacentistas consultaban la sinastría antes de pactar alianzas matrimoniales, y en India esa tradición continúa viva hoy, cuando los padres comparan cartas astrales desde la infancia de sus hijos. El propio Claudio Ptolomeo, en su *Tetrabiblos* del siglo II d. C., texto fundacional de la astrología occidental, ya señalaba como primer criterio de vínculo la conjunción entre el Sol y la Luna de ambas personas, o entre sus respectivas Lunas: el corazón y el alma reconociéndose.</p><p>Lo que la sinastría examina, en esencia, es la *geometría del encuentro*: los ángulos que forman entre sí los planetas de dos cartas cuentan una historia de atracción, tensión, crecimiento o aprendizaje. Los astros inclinan; la voluntad decide. Pero conocer esa geometría es un primer paso luminoso hacia la comprensión del otro.</p>
+<h2>De Ptolomeo a hoy: los pilares históricos de la compatibilidad astrológica</h2>
+<p>Para comprender la sinastría tal como la practicamos hoy, es necesario remontar el tiempo hasta los textos que la cimentaron. El primer gran pilar es el *Tetrabiblos* de Claudio Ptolomeo, erudito alejandrino del siglo II d. C., cuya obra sistematizó los planetas, los signos del zodiaco y las casas astrológicas que aún son el lenguaje vivo de cualquier carta natal. Ptolomeo propuso que, para leer la compatibilidad entre dos personas, el astrólogo debía buscar conjunciones específicas entre sus cartas: Sol con Luna, Luna con Luna, o el ascendente con la Luna —puntos donde dos cosmos personales se tocan y se reconocen.</p><p>Pero el *Tetrabiblos* no llega solo a esta conversación. Sus raíces se entrelazan con el *Carmen* de Doroteo de Sidón en el siglo I d. C. y con *El libro de Aristóteles* de Masha'allah en el siglo VIII. Cada texto añadió capas de interpretación:</p><ul><li>Doroteo aportó las bases predictivas del amor y la unión.</li><li>Ptolomeo formalizó la geometría celeste de la relación.</li><li>Masha'allah integró la tradición árabe y persa al tejido astrológico occidental.</li></ul><p>Esta cadena ininterrumpida de conocimiento es lo que da a la sinastría moderna su profundidad real.</p>
+<h2>Cómo se lee una sinastría: conjunciones, ascendentes y la danza Sol-Luna</h2>
+<p>Leer una sinastría es, ante todo, aprender a escuchar el diálogo que dos cartas natales sostienen entre sí. El primer punto de atención es la conjunción: cuando un planeta de una carta cae exactamente sobre un planeta de la otra, las energías se fusionan, se amplifican, se vuelven inseparables. Es el aspecto de mayor magnetismo, y también el más exigente, porque no deja espacio para ignorar lo que el otro activa en nosotros.</p><p>Ptolomeo, en su *Tetrabiblos*, ya señalaba tres ejes prioritarios: la conjunción Sol-Luna entre ambas cartas, la Luna con la Luna del otro, y el ascendente en relación con la Luna. No es casual. El Sol representa la identidad consciente, la Luna el mundo emocional e instintivo, y el ascendente la máscara que mostramos al mundo y, también, la primera impresión que dejamos.</p><p>Cuando el Sol de uno ilumina la Luna del otro, surge una resonancia casi inmediata: uno da estructura, el otro nutre. Cuando dos Lunas se sincronizan, los ritmos emocionales se acompasan de forma casi inexplicable.</p><p>Los elementos a observar, en síntesis:</p><ul><li>Conjunciones Sol-Luna entre cartas</li><li>Relación entre ambas Lunas</li><li>Ascendente en contacto con la Luna del otro</li></ul><p>Los astros inclinan, nunca obligan.</p>
+<h2>Los astros inclinan, no obligan: lo que la sinastría puede (y no puede) decirte sobre el amor</h2>
+<p>Aquí está la verdad que toda alma enamorada necesita escuchar: los planetas no escriben tu historia, la iluminan. Cuando superpongo dos cartas natales, lo que emerge no es un veredicto sino un mapa de energías, tensiones y resonancias que conviven en el espacio entre dos personas. Saturno en cuadratura con tu Venus natal no condena la relación al fracaso; señala, con su rigor característico, que ese vínculo exigirá trabajo consciente, paciencia y estructura. La diferencia es enorme.</p><p>La sinastría revela con notable precisión ciertos patrones:</p><ul><li>Donde fluye la atracción natural y por qué (Venus, Marte, el Descendente).</li><li>Qué áreas de la vida desafiarán la convivencia (cuadraturas, oposiciones entre luminares).</li><li>Cuáles son los puntos de profunda comprensión mutua (conjunciones Luna-Luna, armonías entre Mercurios).</li></ul><p>Lo que ningún aspecto puede predecir es la voluntad. Dos personas con sinastría tensa han construido amores extraordinarios porque eligieron crecer juntas. Dos personas con sinastría aparentemente perfecta se han separado por no cultivar lo que los astros insinuaban. El cielo sugiere; ustedes deciden.</p>
+<h2>Para cerrar</h2>
+<p>La sinastría no te dice si alguien es "el indicado" — te revela el *territorio* que dos almas han venido a explorar juntas, con sus cumbres luminosas y sus valles que exigen valentía. Cada aspecto entre sus cartas natales es una conversación cósmica que ya comenzó antes de que se dijeran hola. ¿Conoces los grados exactos de tu Venus, tu Marte, tu Luna? Ahí, en esos números aparentemente pequeños, duerme la clave de lo que buscas en otro ser humano — y de lo que tú, a tu vez, has venido a ofrecerle al mundo.</p>
+
+  <div class="cta">
+    <h3>✦ Descubre tu propio cielo</h3>
+    <p>Tu carta natal guarda respuestas que solo tú puedes leer. Calcúlala gratis al instante y recibe tu horóscopo diario por WhatsApp.</p>
+    <a href="https://mundi65.github.io/lumina/">✦ Calcular mi carta natal gratis →</a>
+  </div>
+</article>
+<footer>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico. Los astros inclinan, no obligan.<br>© 2026 Lumina · DIGIWAV
+</footer>
+</body>
+</html>
