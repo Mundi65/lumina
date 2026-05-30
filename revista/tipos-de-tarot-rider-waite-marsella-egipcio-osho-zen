@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tipos de tarot: Rider-Waite, Marsella, Egipcio y Osho Zen · Lumina</title>
+<meta name="description" content="Descubre los mazos de tarot más importantes: historia, simbolismo y para quién es cada uno. Rider-Waite, Marsella, Egipcio y Osho Zen explicados." />
+<meta name="keywords" content="tipos de tarot, tarot rider waite, tarot de marsella, tarot osho zen" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 40%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;line-height:1.8;font-weight:300}
+  nav{border-bottom:1px solid var(--line);position:sticky;top:0;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);z-index:10}
+  nav .in{max-width:760px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .logo .m{color:var(--gold)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  article{max-width:760px;margin:0 auto;padding:54px 24px 40px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,46px);font-weight:600;line-height:1.12;
+    background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .meta{color:var(--muted);font-style:italic;font-size:16px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:34px 0 12px;font-weight:600}
+  p{margin-bottom:16px;color:#e7e3f4;font-size:17px}
+  ul{margin:0 0 16px 24px;color:#e7e3f4}
+  li{margin-bottom:6px}
+  .cta{background:rgba(216,180,106,.07);border:1px dashed var(--line);border-radius:18px;padding:30px;text-align:center;margin-top:44px}
+  .cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-soft);margin-bottom:10px}
+  .cta a{display:inline-block;margin-top:16px;padding:14px 28px;border-radius:40px;color:#1a1430;font-weight:600;
+    text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:18px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 8px 24px rgba(216,180,106,.3)}
+  footer{border-top:1px solid var(--line);max-width:760px;margin:40px auto 0;padding:28px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="https://mundi65.github.io/lumina/" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="https://mundi65.github.io/lumina/">← Volver al inicio</a>
+</div></nav>
+<article>
+  <h1>Tipos de tarot: Rider-Waite, Marsella, Egipcio y Osho Zen</h1>
+  <div class="meta">Descubre los mazos de tarot más importantes: historia, simbolismo y para quién es cada uno. Rider-Waite, Marsella, Egipcio y Osho Zen explicados.</div>
+  <p>Las cartas no mienten, pero sí hablan idiomas distintos: el Tarot de Marsella murmura en el francés austero del siglo XVII, el Rider-Waite despliega sus símbolos como un grimorio ilustrado de la Orden del Alba Dorada, el Egipcio evoca papiros y misterios del Nilo, y el Osho Zen rompe todas las reglas del tarot tradicional con la elegancia de quien ya no necesita reglas. Antes de que te preguntes qué mazo es "el correcto" para ti, conviene que conozcas su linaje, su lenguaje y la visión del mundo que cada uno porta en sus imágenes. Porque elegir un tarot no es solo elegir unas cartas: es elegir una forma de conversar contigo mismo.</p>
+<h2>El origen de cada mazo: cómo nació cada tradición y qué la hace única</h2>
+<p>Cada mazo de tarot nació de una necesidad distinta: la de iluminar, la de ordenar, la de conectar con lo sagrado o la de despertar desde adentro.</p><p>El **Rider-Waite** emergió en 1909 de las mentes de A. E. Waite y la artista Pamela Colman Smith, ambos iniciados en la Hermetic Order of the Golden Dawn. Su revolución fue visual: por primera vez, los 56 Arcanos Menores recibieron escenas completas, convirtiendo cada carta en un espejo del alma humana.</p><p>El **Tarot de Marsella** no nació en Marsella, sino en el Renacimiento italiano, probablemente en Milán o Florencia hacia 1430. Viajó al sur de Francia tras la conquista del Piamonte en 1499, donde encontró su forma canónica. Es la columna vertebral simbólica de la que descienden casi todas las tradiciones occidentales.</p><p>El **Tarot Egipcio** se construyó sobre la fascinación ocultista europea por el Antiguo Egipto, tejiendo correspondencias entre los arcanos y la cosmología del Nilo, aunque su origen es esotérico occidental, no arqueológico.</p><p>El **Osho Zen** es el más reciente y radical: nacido del pensamiento del maestro Osho, reorienta el tarot hacia la meditación y la conciencia presente, alejándose de la predicción para acercarse a la observación interior.</p><p>Cuatro caminos, una misma invitación: conocerte.</p>
+<h2>Los símbolos que hablan: el lenguaje visual e histórico de cada baraja</h2>
+<p>Cada baraja de tarot no es un simple juego de imágenes: es un sistema simbólico vivo, construido sobre capas de historia, filosofía y cosmovisión. El Rider-Waite, publicado en 1909, fue el primero en llevar narrativa visual a los Arcanos Menores, decisión radical que transformó para siempre la práctica lectora; sus símbolos beben del hermetismo, la Cábala y la alquimia de la Golden Dawn, de modo que cada detalle —el color de un manto, la posición de una mano— es un mensaje deliberado.</p><p>El Tarot de Marsella, heredero del Renacimiento italiano del siglo XV, habla en un lenguaje más austero y geométrico: sus palos son ornamentales, sus figuras frontales, su fuerza reside en la abstracción que invita al inconsciente a completar el sentido.</p><p>El Tarot Egipcio traslada ese mismo viaje simbólico a los jeroglíficos y arquetipos del Nilo, asociando los arcanos con deidades como Isis u Osiris, lo que lo convierte en un espejo de ciclos cósmicos eternos.</p><p>El Osho Zen, en cambio, rompe deliberadamente con la iconografía occidental: sus imágenes son meditativas, fluidas, orientadas al momento presente y no a la predicción, recordándonos que el símbolo más poderoso es el que disuelve el ego y revela la conciencia pura.</p><p>En suma, elegir una baraja es elegir un idioma para dialogar con tu mundo interior.</p>
+<h2>¿Con qué mazo conectas? Diferencias prácticas para elegir el tuyo</h2>
+<p>Elegir tu mazo de tarot no es una decisión trivial: es, en cierto modo, elegir el idioma en que deseas que el inconsciente te hable.</p><p>El **Rider-Waite** es ideal para quienes se inician o aprenden de forma autodidacta. Sus escenas narrativas en los Arcanos Menores actúan como espejos emocionales inmediatos; la imagen *te cuenta* algo antes de que abras ningún libro.</p><p>El **Tarot de Marsella**, con su geometría austera y sus pip cards sin escenas figurativas, exige más al lector: invita a desarrollar intuición pura y dominio simbólico del número, el color y la forma. Es el mazo de quien quiere profundizar en la tradición europea clásica.</p><p>El **Tarot Egipcio** convoca a quienes sienten resonancia con la sabiduría hermética del antiguo Egipto y gustan de una estética sagrada y arquetípica. Su lenguaje es más ceremonial, más silencioso.</p><p>El **Osho Zen** trasciende la estructura predictiva: no busca "¿qué pasará?" sino "¿qué hay en mí ahora mismo?". Es perfecto para la meditación activa y la autoobservación sin apego al resultado.</p><p>Algunas preguntas que pueden orientarte:</p><ul><li>¿Prefieres imágenes narrativas o símbolos abstractos?</li><li>¿Buscas tradición o exploración contemporánea?</li><li>¿Tu consulta es predictiva o de autoconocimiento?</li></ul><p>Los astros inclinan, y los mazos también. El tuyo es el que te interpela desde la primera mirada.</p>
+<h2>Cómo leer cada tarot: claves de interpretación según su sistema simbólico</h2>
+<p>Cada sistema de tarot habla un idioma simbólico distinto, y aprender a escucharlo es la primera habilidad del lector consciente.</p><p>Con el **Rider-Waite**, la clave está en la narrativa visual: cada carta cuenta una historia humana completa. Observa la postura de los personajes, los colores del cielo, los objetos en segundo plano. Waite y Smith codificaron capas de simbolismo cabalístico y hermético que enriquecen cualquier lectura, pero la imagen habla incluso antes de que conozcas esa tradición.</p><p>Con el **Tarot de Marsella**, el trabajo es más meditativo: los Arcanos Menores no tienen escenas, solo palos y números. Aquí la numerología, la geometría y la intuición pura se convierten en tus guías. Pregunta qué evoca ese cuatro de espadas antes de consultar un libro.</p><p>Con el **Tarot Egipcio**, los arquetipos de dioses y faraones invitan a una lectura arquetípica y transpersonal. Pregunta no solo qué ocurre, sino qué fuerza cósmica está actuando.</p><p>Con el **Osho Zen**, abandona el deseo de predecir. Este mazo interroga el estado interno del momento presente. Sus cartas no describen eventos, describen energías: úsalo para observar, no para controlar.</p><p>En todos los sistemas, estas prácticas fortalecen la lectura:</p><ul><li>Silenciar la mente antes de barajar</li><li>Formular preguntas abiertas, no de sí o no</li><li>Registrar las lecturas por escrito para observar patrones</li></ul><p>Los astros inclinan; las cartas iluminan. La interpretación siempre es tuya.</p>
+<h2>Para cerrar</h2>
+<p>Cada baraja es un espejo distinto, pero todos reflejan la misma luz: la tuya. Ya sea que te llame la simbología medieval del Marsella, la riqueza pictórica del Rider-Waite, la sabiduría milenaria del Egipcio o la quietud contemplativa del Osho Zen, el tarot no predice tu destino, te invita a leerlo con honestidad. Quizás el mazo que más te intriga sea precisamente el que tu intuición lleva tiempo buscando. Escucha ese impulso; los astros ya lo notaron.</p>
+
+  <div class="cta">
+    <h3>✦ Descubre tu propio cielo</h3>
+    <p>Tu carta natal guarda respuestas que solo tú puedes leer. Calcúlala gratis al instante y recibe tu horóscopo diario por WhatsApp.</p>
+    <a href="https://mundi65.github.io/lumina/">✦ Calcular mi carta natal gratis →</a>
+  </div>
+</article>
+<footer>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico. Los astros inclinan, no obligan.<br>© 2026 Lumina · DIGIWAV
+</footer>
+</body>
+</html>
