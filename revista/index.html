@@ -25,6 +25,14 @@
   header.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,6vw,58px);font-weight:600;line-height:1.05;margin-bottom:18px}
   header.hero p{color:var(--muted);font-weight:300;max-width:600px;margin:0 auto;font-size:18px;line-height:1.6}
   .count{margin-top:20px;display:inline-block;color:var(--gold-soft);font-size:14px;letter-spacing:1px;border:1px solid var(--line);border-radius:30px;padding:7px 18px}
+  .lum-cover{position:relative;display:flex;justify-content:center;margin:34px 0 0}
+  .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:300px;background:radial-gradient(ellipse,rgba(216,180,106,.13),transparent 70%);pointer-events:none}
+  .lum-trio{position:relative;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 14px 34px rgba(0,0,0,.6))}
+  .lum-tc{width:130px}.lum-tc svg{width:100%;height:auto;display:block}
+  .lum-tc.left{transform:rotate(-10deg) translateY(12px);margin-right:-28px;z-index:1}
+  .lum-tc.right{transform:rotate(10deg) translateY(12px);margin-left:-28px;z-index:1}
+  .lum-tc.center{z-index:2;transform:translateY(-10px) scale(1.08)}
+  @media(max-width:560px){.lum-tc{width:92px}}
   .filters{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:34px 0 30px}
   .filters button{background:rgba(8,7,24,.5);border:1px solid var(--line);color:var(--muted);border-radius:30px;
     padding:8px 16px;font-family:'Jost';font-size:13px;cursor:pointer;transition:all .18s}
@@ -59,6 +67,7 @@
     <h1>Una biblioteca viva de sabiduría</h1>
     <p>Astrología, tarot, numerología y rituales explicados con profundidad y alma. Cada guía, una puerta para leer tu cielo. Y crece cada semana.</p>
     <div class="count" id="count">Cargando…</div>
+    <div id="lumTrio" class="lum-cover"></div>
   </header>
   <div class="filters" id="filters"></div>
   <div class="mag" id="mag"></div>
@@ -71,6 +80,18 @@
 <script>
   // estrellas
   (function(){var c=document.getElementById('stars'),h='';for(var i=0;i<70;i++){var s=(Math.random()*2+.5).toFixed(1);h+='<span style="top:'+(Math.random()*100).toFixed(1)+'%;left:'+(Math.random()*100).toFixed(1)+'%;width:'+s+'px;height:'+s+'px;animation-delay:'+(Math.random()*4).toFixed(1)+'s;animation-duration:'+(Math.random()*3+2).toFixed(1)+'s"></span>';}c.innerHTML=h;})();
+
+  // trío de cartas de tarot (arte vectorial)
+  (function(){
+    function star(cx,cy,r,fill,pts){pts=pts||4;var v=pts*2,o=[];for(var i=0;i<v;i++){var ang=(i*(360/v)-90)*Math.PI/180,rr=(i%2===0)?r:r*0.42;o.push((cx+Math.cos(ang)*rr).toFixed(1)+','+(cy+Math.sin(ang)*rr).toFixed(1));}return '<polygon points="'+o.join(' ')+'" fill="'+fill+'"/>';}
+    function card(type){var title,num,mid="";
+      if(type==="sol"){title="EL SOL";num="XIX";var rays="";for(var a=0;a<12;a++){var ang=a*30*Math.PI/180,x1=90+Math.cos(ang)*40,y1=132+Math.sin(ang)*40,x2=90+Math.cos(ang)*60,y2=132+Math.sin(ang)*60;rays+='<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" stroke="#d8b46a" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.85"/>';}mid=rays+'<circle cx="90" cy="132" r="32" fill="url(#sun_'+type+')"/>';}
+      else if(type==="estrella"){title="LA ESTRELLA";num="XVII";mid=star(90,120,36,'url(#sun_'+type+')',8)+star(48,92,9,'#d8b46a')+star(134,98,9,'#d8b46a')+star(58,172,7,'#d8b46a')+star(126,170,7,'#d8b46a')+star(90,200,8,'#d8b46a');}
+      else{title="LA LUNA";num="XVIII";mid='<mask id="cm_'+type+'"><rect x="0" y="0" width="180" height="280" fill="white"/><circle cx="104" cy="118" r="30" fill="black"/></mask><circle cx="90" cy="128" r="34" fill="url(#sun_'+type+')" mask="url(#cm_'+type+')"/>'+star(122,82,8,'#d8b46a')+star(54,168,7,'#d8b46a')+star(132,170,6,'#d8b46a')+star(70,96,5,'#d8b46a');}
+      return '<svg viewBox="0 0 180 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg_'+type+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#241a52"/><stop offset="100%" stop-color="#0c0a25"/></linearGradient><radialGradient id="sun_'+type+'" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#fff8e6"/><stop offset="50%" stop-color="#d8b46a"/><stop offset="100%" stop-color="#7a5e28"/></radialGradient></defs><rect x="3" y="3" width="174" height="274" rx="16" fill="url(#bg_'+type+')" stroke="#d8b46a" stroke-width="2"/><rect x="11" y="11" width="158" height="258" rx="10" fill="none" stroke="#d8b46a" stroke-opacity="0.45" stroke-width="1"/><text x="90" y="42" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="14" letter-spacing="1.5">'+title+'</text>'+mid+'<text x="90" y="252" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="18" letter-spacing="3">'+num+'</text></svg>';}
+    var t=document.getElementById('lumTrio');
+    if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left">'+card("luna")+'</div><div class="lum-tc center">'+card("estrella")+'</div><div class="lum-tc right">'+card("sol")+'</div></div>';
+  })();
 
   var ALL = [], activeCat = "Todos";
 
