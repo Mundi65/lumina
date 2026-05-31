@@ -1,0 +1,16 @@
+{
+  "articles": [
+    { "slug": "luna-natal-como-amas-signo-lunar", "title": "Qué revela tu Luna sobre cómo amas", "cat": "Astrología", "glyph": "☽", "desc": "El astro más íntimo de tu carta y el mapa secreto de tus emociones." },
+    { "slug": "carta-tarot-signo-zodiaco", "title": "¿Qué carta del tarot corresponde a tu signo?", "cat": "Tarot", "glyph": "⚝", "desc": "Cada signo guarda un arcano que lo refleja. Descubre el tuyo." },
+    { "slug": "significado-22-arcanos-mayores-tarot", "title": "Los 22 Arcanos Mayores y su mensaje oculto", "cat": "Tarot", "glyph": "✦", "desc": "El viaje del alma contado a través de las cartas más poderosas." },
+    { "slug": "tipos-de-tarot-rider-waite-marsella-egipcio-osho-zen", "title": "Tipos de tarot: Rider-Waite, Marsella, Egipcio y Osho Zen", "cat": "Tarot", "glyph": "⚝", "desc": "Cada baraja, un lenguaje distinto para leer el alma." },
+    { "slug": "como-calcular-numero-sendero-de-vida", "title": "Tu Número de Sendero de Vida: calcúlalo y descúbrete", "cat": "Numerología", "glyph": "№", "desc": "La cifra que resume tu misión, tus dones y tus desafíos." },
+    { "slug": "sinastria-compatibilidad-entre-signos", "title": "Sinastría: la verdad sobre la compatibilidad de signos", "cat": "Compatibilidad", "glyph": "♀", "desc": "Más allá del Sol: cómo se atraen y chocan dos cartas natales." },
+    { "slug": "que-es-el-ascendente-en-astrologia", "title": "Qué es el Ascendente y por qué importa tanto", "cat": "Astrología", "glyph": "✶", "desc": "La máscara con la que te presentas al mundo, más reveladora de lo que crees." },
+    { "slug": "cristales-y-cuarzos-cual-elegir-segun-tu-intencion", "title": "Cristales y cuarzos: cuál elegir según tu intención", "cat": "Energía", "glyph": "◈", "desc": "La piedra correcta para el amor, la abundancia o la protección." },
+    { "slug": "mercurio-retrogrado-que-es-como-atravesarlo", "title": "Mercurio retrógrado: qué es y cómo navegarlo", "cat": "Tránsitos", "glyph": "☿", "desc": "Desmontamos el mito y te damos las claves reales del tránsito." },
+    { "slug": "eclipses-puntos-de-quiebre-en-tu-vida", "title": "Eclipses: por qué marcan puntos de quiebre en tu vida", "cat": "Tránsitos", "glyph": "☉", "desc": "Los portales del cielo que aceleran tu destino." },
+    { "slug": "luna-llena-ritual-para-soltar-lo-que-ya-no-sirve", "title": "Luna llena: el ritual para soltar lo que ya no sirve", "cat": "Rituales", "glyph": "☽", "desc": "Aprovecha la cima del ciclo lunar para liberar y renovarte." },
+    { "slug": "luna-nueva-como-plantar-tus-intenciones", "title": "Luna nueva: cómo plantar tus intenciones", "cat": "Rituales", "glyph": "☾", "desc": "El momento ideal para sembrar tus nuevos comienzos." }
+  ]
+}
