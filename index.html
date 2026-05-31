@@ -158,8 +158,9 @@
   footer .fl a:hover{color:var(--gold)}
   footer .fl h5{color:var(--gold-soft);font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
   .legal{border-top:1px solid var(--line);padding-top:22px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
-  .reveal-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-  .reveal-on-scroll.in{opacity:1;transform:translateY(0)}
+  .reveal-on-scroll{transition:opacity .7s ease,transform .7s ease}
+  .reveal-on-scroll.armed{opacity:0;transform:translateY(24px)}
+  .reveal-on-scroll.armed.in{opacity:1;transform:translateY(0)}
   @media(max-width:780px){
     .nav-links{display:none}
     .field-grid{grid-template-columns:1fr}
@@ -395,7 +396,7 @@
 
   // ---- scroll reveal ----
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
-  document.querySelectorAll('.reveal-on-scroll').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el)});
+  document.querySelectorAll('.reveal-on-scroll').forEach((el,i)=>{el.classList.add('armed');el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el)});
 
   // ---- trío de cartas de tarot (arte vectorial) ----
   (function(){
@@ -479,4 +480,3 @@
     document.getElementById('waBtn').href=`https://wa.me/${WA_NUMBER}?text=${msg}`;
     const res=document.getElementById('result');res.style.display='block';
     res.scrollIntoView({behavior:'smooth',block:'start'});
-  });
