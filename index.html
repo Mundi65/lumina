@@ -3,422 +3,86 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lumina · Astrología y Tarot por WhatsApp | Carta Natal Gratis</title>
-<meta name="description" content="Calcula tu carta natal gratis al instante y recibe tu lectura y tu horóscopo diario por WhatsApp. Astrología, tarot y numerología con Lumina, en Ecuador. Sin registro." />
-<meta name="keywords" content="astrología por WhatsApp, carta natal gratis, tarot por WhatsApp, horóscopo diario WhatsApp, numerología, astrología Ecuador, tarot Ecuador, sinastría, horóscopo del día" />
-<link rel="canonical" href="https://mundi65.github.io/lumina/" />
-<meta name="robots" content="index, follow" />
-<!-- Open Graph: vista previa bonita al compartir el link en WhatsApp, Instagram o Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Lumina · Tu carta natal gratis y tu horóscopo por WhatsApp" />
-<meta property="og:description" content="Descubre las posiciones reales de tus astros y recibe tu lectura por WhatsApp. Astrología, tarot y numerología." />
-<meta property="og:url" content="https://mundi65.github.io/lumina/" />
-<meta property="og:image" content="https://mundi65.github.io/lumina/la_estrella.png" />
-<meta property="og:locale" content="es_EC" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Lumina · Astrología y Tarot por WhatsApp" />
-<meta name="twitter:description" content="Tu carta natal gratis al instante. Lecturas y horóscopo diario por WhatsApp." />
-<meta name="twitter:image" content="https://mundi65.github.io/lumina/la_estrella.png" />
+<title>La Revista de Lumina — Astrología, Tarot y Numerología</title>
+<meta name="description" content="Una biblioteca viva de sabiduría esotérica: astrología, tarot, numerología y rituales explicados con profundidad. Crece cada semana." />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
-  :root{
-    --night:#070615; --night2:#120d2c; --panel:#15102f; --gold:#d8b46a; --gold-soft:#ecd9ac;
-    --ink:#ece9f5; --muted:#9a96b8; --line:rgba(216,180,106,.2);
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+  :root{--night:#070615;--gold:#d8b46a;--gold-soft:#ecd9ac;--ink:#ece9f5;--muted:#9a96b8;--line:rgba(216,180,106,.2)}
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    background:var(--night); color:var(--ink); font-family:'Jost',sans-serif; line-height:1.65;
-    overflow-x:hidden;
-  }
-  .serif{font-family:'Cormorant Garamond',serif}
-  .gold{color:var(--gold)}
-  .gradtext{background:linear-gradient(90deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  /* starfield */
+  body{background:radial-gradient(ellipse at 50% -10%,#241a52 0%,#120d2c 38%,var(--night) 80%);background-attachment:fixed;
+    color:var(--ink);font-family:'Jost',sans-serif;min-height:100vh}
+  a{text-decoration:none;color:inherit}
   #stars{position:fixed;inset:0;z-index:0;pointer-events:none}
   #stars span{position:absolute;background:#fff;border-radius:50%;box-shadow:0 0 6px #fff;animation:tw infinite ease-in-out}
   @keyframes tw{0%,100%{opacity:.1;transform:scale(.8)}50%{opacity:.85;transform:scale(1.2)}}
-  /* nav */
-  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .logo{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;letter-spacing:1px}
-  .logo .moon{color:var(--gold)}
-  .nav-links{display:flex;gap:28px;font-size:14px;color:var(--muted);letter-spacing:.5px}
-  .nav-links a:hover{color:var(--gold)}
-  .btn{display:inline-block;padding:12px 22px;border-radius:40px;font-family:'Cormorant Garamond',serif;
-    font-size:17px;font-weight:600;letter-spacing:.5px;color:#1a1430;cursor:pointer;border:none;
-    background:linear-gradient(90deg,var(--gold),var(--gold-soft));transition:transform .15s,box-shadow .2s;
-    box-shadow:0 8px 24px rgba(216,180,106,.25)}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(216,180,106,.45)}
-  .btn-ghost{background:none;border:1px solid var(--gold);color:var(--gold-soft);box-shadow:none}
-  .btn-ghost:hover{background:rgba(216,180,106,.1)}
-  section{position:relative;z-index:2}
-  /* hero */
-  .hero{text-align:center;padding:90px 0 70px;position:relative}
-  .eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,8vw,78px);font-weight:600;line-height:1.05;margin-bottom:22px}
-  .hero p.lead{font-size:clamp(17px,2.4vw,21px);color:var(--muted);font-weight:300;max-width:620px;margin:0 auto 34px}
-  .hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .trust-mini{margin-top:26px;font-size:13px;color:var(--muted);letter-spacing:.5px}
-  .trust-mini b{color:var(--gold-soft)}
-  /* moon orb */
-  .orb{width:120px;height:120px;margin:0 auto 24px;border-radius:50%;
-    background:radial-gradient(circle at 35% 30%, #fff8e6, var(--gold) 45%, #6b5320 100%);
-    box-shadow:0 0 60px rgba(216,180,106,.5),inset -12px -12px 30px rgba(0,0,0,.4);
-    animation:float 6s ease-in-out infinite}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-  /* free tool */
-  .tool{background:linear-gradient(160deg,rgba(34,26,80,.55),rgba(10,8,28,.85));
-    border:1px solid var(--line);border-radius:28px;padding:38px 32px;max-width:760px;margin:0 auto;
-    box-shadow:0 30px 80px rgba(0,0,0,.5)}
-  .tool h2{font-family:'Cormorant Garamond',serif;font-size:34px;text-align:center;margin-bottom:6px}
-  .tool .sub{text-align:center;color:var(--muted);font-weight:300;margin-bottom:26px}
-  .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .field-grid .full{grid-column:1/-1}
-  label{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-soft);margin-bottom:6px}
-  input{width:100%;background:rgba(7,6,21,.6);border:1px solid var(--line);border-radius:13px;
-    padding:13px 15px;color:var(--ink);font-family:'Jost';font-size:15px;outline:none;transition:border .2s}
-  input:focus{border-color:var(--gold)}
-  input::placeholder{color:#6c6890}
-  #revealBtn{width:100%;margin-top:22px;padding:15px;font-size:19px}
-  /* result chips */
-  #result{margin-top:30px;display:none}
-  .chips{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
-  .chip{display:flex;gap:13px;align-items:flex-start;background:rgba(7,6,21,.55);border:1px solid var(--line);
-    border-radius:14px;padding:14px 16px;opacity:0;transform:translateY(10px);animation:rise .5s ease forwards}
-  .chip .g{font-size:30px;color:var(--gold);line-height:1}
-  .chip .role{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
-  .chip .pl{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-soft)}
-  .chip .ess{font-size:13.5px;color:var(--ink);font-weight:300;margin-top:2px;line-height:1.45}
-  @keyframes rise{to{opacity:1;transform:translateY(0)}}
-  .unlock{text-align:center;background:rgba(216,180,106,.07);border:1px dashed var(--line);
-    border-radius:18px;padding:24px}
-  .unlock h3{font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:8px}
-  .unlock p{color:var(--muted);font-weight:300;margin-bottom:18px;font-size:15px}
-  /* section heads */
-  .shead{text-align:center;max-width:640px;margin:0 auto 50px}
-  .shead .eyebrow{margin-bottom:14px}
-  .shead h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,46px);font-weight:600;line-height:1.1;margin-bottom:14px}
-  .shead p{color:var(--muted);font-weight:300}
-  .pad{padding:84px 0}
-  /* steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .step{text-align:center;padding:14px}
-  .step .num{font-family:'Cormorant Garamond',serif;font-size:50px;color:var(--gold);opacity:.5;line-height:1}
-  .step h4{font-family:'Cormorant Garamond',serif;font-size:21px;margin:10px 0 8px}
-  .step p{color:var(--muted);font-weight:300;font-size:15px}
-  /* authority */
-  .authority{background:linear-gradient(160deg,rgba(34,26,80,.4),rgba(10,8,28,.7));border:1px solid var(--line);
-    border-radius:26px;padding:46px 40px;display:flex;gap:34px;align-items:center;flex-wrap:wrap;justify-content:center}
-  .authority .av{width:110px;height:110px;border-radius:50%;flex-shrink:0;
-    background:radial-gradient(circle at 40% 35%,#2a2258,#0c0a25);border:2px solid var(--gold);
-    display:flex;align-items:center;justify-content:center;font-size:46px;color:var(--gold)}
-  .authority .txt{flex:1;min-width:260px}
-  .authority blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;line-height:1.4;margin-bottom:14px}
-  .authority cite{color:var(--gold-soft);font-style:normal;font-size:14px;letter-spacing:.5px}
-  /* value ladder */
-  .plans{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:780px;margin:0 auto}
-  .plan{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:22px;padding:32px 28px}
-  .plan.featured{border-color:var(--gold);background:linear-gradient(160deg,rgba(34,26,80,.6),rgba(10,8,28,.8));position:relative}
-  .plan.featured::before{content:'EL FAVORITO';position:absolute;top:-12px;left:50%;transform:translateX(-50%);
-    background:linear-gradient(90deg,var(--gold),var(--gold-soft));color:#1a1430;font-size:11px;letter-spacing:1.5px;
-    padding:5px 14px;border-radius:20px;font-weight:600}
-  .plan h3{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:4px}
-  .plan .price{font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold);margin:8px 0 18px}
-  .plan .price small{font-size:15px;color:var(--muted)}
-  .plan ul{list-style:none;margin-bottom:22px}
-  .plan li{padding:8px 0;border-bottom:1px solid rgba(216,180,106,.08);font-weight:300;font-size:15px;color:#ddd9ee}
-  .plan li::before{content:'✦ ';color:var(--gold)}
-  /* magazine */
-  .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .art{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:18px;overflow:hidden;
-    transition:transform .2s,border-color .2s;cursor:pointer}
+  nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(7,6,21,.7);border-bottom:1px solid var(--line)}
+  nav .in{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600}.logo .m{color:var(--gold)}
+  nav a.back{color:var(--muted);font-size:14px}nav a.back:hover{color:var(--gold)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+  header.hero{text-align:center;padding:70px 0 30px}
+  .eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  header.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,6vw,58px);font-weight:600;line-height:1.05;margin-bottom:18px}
+  header.hero p{color:var(--muted);font-weight:300;max-width:600px;margin:0 auto;font-size:18px;line-height:1.6}
+  .count{margin-top:20px;display:inline-block;color:var(--gold-soft);font-size:14px;letter-spacing:1px;border:1px solid var(--line);border-radius:30px;padding:7px 18px}
+  .lum-cover{position:relative;display:flex;justify-content:center;margin:34px 0 0}
+  .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:300px;background:radial-gradient(ellipse,rgba(216,180,106,.13),transparent 70%);pointer-events:none}
+  .lum-trio{position:relative;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 14px 34px rgba(0,0,0,.6))}
+  .lum-tc{width:130px}.lum-tc svg,.lum-tc img{width:100%;height:auto;display:block;border-radius:10px}
+  .lum-tc.left{transform:rotate(-10deg) translateY(12px);margin-right:-28px;z-index:1}
+  .lum-tc.right{transform:rotate(10deg) translateY(12px);margin-left:-28px;z-index:1}
+  .lum-tc.center{z-index:2;transform:translateY(-10px) scale(1.08)}
+  @media(max-width:560px){.lum-tc{width:92px}}
+  .filters{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:34px 0 30px}
+  .filters button{background:rgba(8,7,24,.5);border:1px solid var(--line);color:var(--muted);border-radius:30px;
+    padding:8px 16px;font-family:'Jost';font-size:13px;cursor:pointer;transition:all .18s}
+  .filters button:hover{color:var(--gold-soft)}
+  .filters button.on{background:linear-gradient(90deg,var(--gold),var(--gold-soft));color:#1a1430;border-color:transparent}
+  .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding-bottom:70px}
+  .art{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s}
   .art:hover{transform:translateY(-5px);border-color:var(--gold)}
-  .art .cover{height:150px;display:flex;align-items:center;justify-content:center;font-size:78px;color:var(--gold);
-    background:radial-gradient(circle at 50% 25%,#2a2258,#0c0a25);text-shadow:0 0 26px rgba(216,180,106,.5);transition:transform .25s}
+  .art .cover{height:140px;display:flex;align-items:center;justify-content:center;font-size:70px;color:var(--gold);
+    background:radial-gradient(circle at 50% 25%,#2a2258,#0c0a25);text-shadow:0 0 24px rgba(216,180,106,.5);transition:transform .25s}
   .art:hover .cover{transform:scale(1.06)}
   .art .cover img{width:100%;height:100%;object-fit:cover;display:block}
   .art .body{padding:18px}
   .art .cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
   .art h4{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.25;margin-bottom:8px}
   .art p{color:var(--muted);font-weight:300;font-size:13.5px}
-  /* tarot trio */
-  .lum-cover{position:relative;display:flex;justify-content:center;margin:0 0 54px}
-  .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:320px;background:radial-gradient(ellipse,rgba(216,180,106,.14),transparent 70%);pointer-events:none}
-  .lum-trio{position:relative;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 14px 34px rgba(0,0,0,.6))}
-  .lum-tc{width:150px}.lum-tc svg,.lum-tc img{width:100%;height:auto;display:block;border-radius:10px}
-  .lum-tc.left{transform:rotate(-10deg) translateY(12px);margin-right:-30px;z-index:1}
-  .lum-tc.right{transform:rotate(10deg) translateY(12px);margin-left:-30px;z-index:1}
-  .lum-tc.center{z-index:2;transform:translateY(-10px) scale(1.08)}
-  @media(max-width:560px){.lum-tc{width:98px}}
-  /* testimonials */
-  .tests{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .test{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:18px;padding:26px}
-  .test .stars{color:var(--gold);letter-spacing:3px;margin-bottom:12px}
-  .test p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;line-height:1.5;margin-bottom:14px}
-  .test .who{font-size:13px;color:var(--gold-soft);letter-spacing:.5px}
-  /* final cta */
-  .final{text-align:center;background:linear-gradient(160deg,rgba(34,26,80,.55),rgba(10,8,28,.85));
-    border:1px solid var(--line);border-radius:28px;padding:64px 40px}
-  .final h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,6vw,54px);font-weight:600;line-height:1.05;margin-bottom:18px}
-  .final p{color:var(--muted);font-weight:300;max-width:520px;margin:0 auto 30px;font-size:18px}
-  /* footer */
-  footer{border-top:1px solid var(--line);padding:46px 0 34px;margin-top:40px;position:relative;z-index:2}
-  footer .cols{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;margin-bottom:30px}
-  footer .logo{margin-bottom:12px}
-  footer .muted{color:var(--muted);font-size:14px;font-weight:300;max-width:300px}
-  footer .fl a{display:block;color:var(--muted);font-size:14px;padding:5px 0}
-  footer .fl a:hover{color:var(--gold)}
-  footer .fl h5{color:var(--gold-soft);font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
-  .legal{border-top:1px solid var(--line);padding-top:22px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center}
-  .reveal-on-scroll{transition:opacity .7s ease,transform .7s ease}
-  .reveal-on-scroll.armed{opacity:0;transform:translateY(24px)}
-  .reveal-on-scroll.armed.in{opacity:1;transform:translateY(0)}
-  @media(max-width:780px){
-    .nav-links{display:none}
-    .field-grid{grid-template-columns:1fr}
-    .steps,.mag,.tests{grid-template-columns:1fr}
-    .plans{grid-template-columns:1fr}
-    .chips{grid-template-columns:1fr}
-    .authority{flex-direction:column;text-align:center}
-  }
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px}
+  footer{border-top:1px solid var(--line);padding:30px 24px;color:#6a6694;font-size:12.5px;line-height:1.7;text-align:center;position:relative;z-index:2}
+  @media(max-width:820px){.mag{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.mag{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div id="stars"></div>
+<nav><div class="in">
+  <a href="../" class="logo"><span class="m">☽</span> Lumina</a>
+  <a href="../" class="back">← Volver al inicio</a>
+</div></nav>
 
-<nav>
-  <div class="wrap">
-    <div class="logo"><span class="moon">☽</span> Lumina</div>
-    <div class="nav-links">
-      <a href="#tool">Carta gratis</a>
-      <a href="#como">Cómo funciona</a>
-      <a href="#revista">Revista</a>
-      <a href="#planes">Planes</a>
-    </div>
-    <a class="btn" href="#tool">Mi lectura gratis</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="orb"></div>
-    <div class="eyebrow">Astrología · Tarot · Numerología</div>
-    <h1>Tu cielo guarda un mensaje.<br><span class="gradtext">Lumina lo revela.</span></h1>
-    <p class="lead">Descubre las posiciones reales de tus astros al nacer y lo que dicen sobre tu carácter, tu amor y tu propósito. Gratis y al instante — tu lectura completa llega directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.</p>
-    <div class="cta-row">
-      <a class="btn" href="#tool">✦ Calcular mi carta natal gratis</a>
-      <a class="btn btn-ghost" href="#como">Cómo funciona</a>
-    </div>
-    <div class="trust-mini">Acompañamiento espiritual para tu reflexión · Cálculo astronómico real, sin clichés</div>
-  </div>
-</section>
-
-<!-- FREE TOOL / HOOK -->
-<section class="pad" id="tool">
-  <div class="wrap">
-    <div class="tool reveal-on-scroll">
-      <h2 class="serif">Trazа tu cielo de nacimiento</h2>
-      <p class="sub">El instante exacto en que llegaste al mundo dibuja un mapa único. Veámoslo.</p>
-      <div class="field-grid">
-        <div class="full">
-          <label>Tu nombre</label>
-          <input id="name" placeholder="¿Cómo te llamas?" />
-        </div>
-        <div>
-          <label>Fecha de nacimiento</label>
-          <input id="date" type="date" />
-        </div>
-        <div>
-          <label>Hora (opcional, mejora la Luna)</label>
-          <input id="time" type="time" />
-        </div>
-      </div>
-      <button class="btn" id="revealBtn">✦ Revelar mis astros</button>
-
-      <div id="result">
-        <div class="chips" id="chips"></div>
-        <div class="unlock">
-          <h3 class="serif">Esto es solo el umbral, <span id="uname" class="gold">viajero</span>.</h3>
-          <p>Recibe la <b>interpretación completa</b> de tu carta —tejida por Lumina— más tu <b>horóscopo diario</b>, directo a tu WhatsApp. Gratis.</p>
-          <a class="btn" id="waBtn" href="#">Recibir mi lectura completa en WhatsApp →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="pad" id="como">
-  <div class="wrap">
-    <div class="shead reveal-on-scroll">
-      <div class="eyebrow">Sencillo y profundo</div>
-      <h2>Tres pasos hacia tu revelación</h2>
-      <p>Sin apps que descargar, sin formularios eternos. Solo tú y tu cielo.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal-on-scroll"><div class="num">I</div><h4 class="serif">Dinos cuándo naciste</h4><p>Con tu nombre y tu fecha de nacimiento calculamos las posiciones reales de tus planetas.</p></div>
-      <div class="step reveal-on-scroll"><div class="num">II</div><h4 class="serif">Recibe tu lectura</h4><p>Lumina interpreta tu carta con erudición y calidez, explicando el porqué de cada revelación.</p></div>
-      <div class="step reveal-on-scroll"><div class="num">III</div><h4 class="serif">Acompaña tu camino</h4><p>Tu horóscopo diario, tiradas de tarot y numerología, siempre a un mensaje de distancia.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- AUTHORITY -->
-<section class="pad">
-  <div class="wrap">
-    <div class="authority reveal-on-scroll">
-      <div class="av">✶</div>
-      <div class="txt">
-        <blockquote>"En los casos de diagnóstico psicológico difícil suelo encargar una carta astral, para tener un punto de vista desde un ángulo completamente distinto. Debo decir que muy a menudo los datos astrológicos esclarecían puntos que de otro modo no habría podido comprender."</blockquote>
-        <cite>— Carl G. Jung, fundador de la psicología analítica · Carta al astrólogo B. V. Raman, 1947</cite>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVISTA / CONTENT -->
-<section class="pad" id="revista">
-  <div class="wrap">
-    <div class="shead reveal-on-scroll">
-      <div class="eyebrow">La Revista de Lumina</div>
-      <h2>Sabiduría que ilumina</h2>
-      <p>Una biblioteca viva de astrología, tarot, numerología y rituales, explicada con profundidad y alma. Cada guía es una puerta para leer tu cielo — y crece cada semana.</p>
-    </div>
-    <div id="lumTrio" class="lum-cover reveal-on-scroll"></div>
-    <div class="mag">
-      <a class="art reveal-on-scroll" href="revista/luna-natal-como-amas-signo-lunar.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/luna-natal.png" alt="Qué revela tu Luna sobre cómo amas" loading="lazy"></div><div class="body"><div class="cat">Astrología</div><h4 class="serif">Qué revela tu Luna sobre cómo amas</h4><p>El astro más íntimo de tu carta y el mapa secreto de tus emociones.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/carta-tarot-signo-zodiaco.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/tarot.png" alt="Qué carta del tarot corresponde a tu signo" loading="lazy"></div><div class="body"><div class="cat">Tarot</div><h4 class="serif">¿Qué carta del tarot corresponde a tu signo?</h4><p>Cada signo guarda un arcano que lo refleja. Descubre el tuyo.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/significado-22-arcanos-mayores-tarot.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/arcanos.png" alt="Los 22 Arcanos Mayores" loading="lazy"></div><div class="body"><div class="cat">Tarot</div><h4 class="serif">Los 22 Arcanos Mayores y su mensaje oculto</h4><p>El viaje del alma contado a través de las cartas más poderosas.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/como-calcular-numero-sendero-de-vida.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/numerologia.png" alt="Tu Número de Sendero de Vida" loading="lazy"></div><div class="body"><div class="cat">Numerología</div><h4 class="serif">Tu Número de Sendero de Vida: calcúlalo y descúbrete</h4><p>La cifra que resume tu misión, tus dones y tus desafíos.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/sinastria-compatibilidad-entre-signos.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/compatibilidad.png" alt="Sinastría y compatibilidad de signos" loading="lazy"></div><div class="body"><div class="cat">Compatibilidad</div><h4 class="serif">Sinastría: la verdad sobre la compatibilidad de signos</h4><p>Más allá del Sol: cómo se atraen y chocan dos cartas natales.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/que-es-el-ascendente-en-astrologia.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/ascendente.png" alt="Qué es el Ascendente" loading="lazy"></div><div class="body"><div class="cat">Astrología</div><h4 class="serif">Qué es el Ascendente y por qué importa tanto</h4><p>La máscara con la que te presentas al mundo, más reveladora de lo que crees.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/tipos-de-tarot-rider-waite-marsella-egipcio-osho-zen.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/tipos-tarot.png" alt="Tipos de tarot" loading="lazy"></div><div class="body"><div class="cat">Tarot</div><h4 class="serif">Tipos de tarot: Rider-Waite, Marsella, Egipcio y Osho Zen</h4><p>Cada baraja, un lenguaje distinto para leer el alma.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/cristales-y-cuarzos-cual-elegir-segun-tu-intencion.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/energia.png" alt="Cristales y cuarzos" loading="lazy"></div><div class="body"><div class="cat">Energía</div><h4 class="serif">Cristales y cuarzos: cuál elegir según tu intención</h4><p>La piedra correcta para el amor, la abundancia o la protección.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/mercurio-retrogrado-que-es-como-atravesarlo.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/mercurio.png" alt="Mercurio retrógrado" loading="lazy"></div><div class="body"><div class="cat">Tránsitos</div><h4 class="serif">Mercurio retrógrado: qué es y cómo navegarlo</h4><p>Desmontamos el mito y te damos las claves reales del tránsito.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/eclipses-puntos-de-quiebre-en-tu-vida.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/eclipses.png" alt="Eclipses" loading="lazy"></div><div class="body"><div class="cat">Tránsitos</div><h4 class="serif">Eclipses: por qué marcan puntos de quiebre en tu vida</h4><p>Los portales del cielo que aceleran tu destino.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/luna-llena-ritual-para-soltar-lo-que-ya-no-sirve.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/luna-llena.png" alt="Ritual de luna llena" loading="lazy"></div><div class="body"><div class="cat">Rituales</div><h4 class="serif">Luna llena: el ritual para soltar lo que ya no sirve</h4><p>Aprovecha la cima del ciclo lunar para liberar y renovarte.</p></div></a>
-      <a class="art reveal-on-scroll" href="revista/luna-nueva-como-plantar-tus-intenciones.html"><div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/luna-nueva.png" alt="Ritual de luna nueva" loading="lazy"></div><div class="body"><div class="cat">Rituales</div><h4 class="serif">Luna nueva: cómo plantar tus intenciones</h4><p>El momento ideal para sembrar tus nuevos comienzos.</p></div></a>
-    </div>
-    <div style="text-align:center;margin-top:40px" class="reveal-on-scroll">
-      <a class="btn btn-ghost" href="revista/">Ver toda la Revista →</a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS · OCULTOS hasta tener testimonios REALES.
-     Para reactivarlos: borra esta línea de apertura del comentario y la línea "FIN TESTIMONIALS" de abajo,
-     y reemplaza cada "[Testimonio real...]" por un testimonio verdadero de un cliente.
-<section class="pad">
-  <div class="wrap">
-    <div class="shead reveal-on-scroll">
-      <div class="eyebrow">Voces que confían</div>
-      <h2>Lo que dicen quienes ya se leyeron</h2>
-    </div>
-    <div class="tests">
-      <div class="test reveal-on-scroll"><div class="stars">★★★★★</div><p>"Sentí que me conocía de toda la vida. La lectura de mi Luna me hizo llorar."</p><div class="who">— [Testimonio real a reemplazar]</div></div>
-      <div class="test reveal-on-scroll"><div class="stars">★★★★★</div><p>"Por fin una IA de tarot que explica el porqué de cada carta. Profundísima."</p><div class="who">— [Testimonio real a reemplazar]</div></div>
-      <div class="test reveal-on-scroll"><div class="stars">★★★★★</div><p>"El horóscopo diario en WhatsApp es mi ritual de cada mañana."</p><div class="who">— [Testimonio real a reemplazar]</div></div>
-    </div>
-  </div>
-</section>
-FIN TESTIMONIALS -->
-
-<!-- PLANES -->
-<section class="pad" id="planes">
-  <div class="wrap">
-    <div class="shead reveal-on-scroll">
-      <div class="eyebrow">Tu acompañamiento</div>
-      <h2>Empieza gratis. Profundiza si lo deseas.</h2>
-    </div>
-    <div class="plans">
-      <div class="plan reveal-on-scroll">
-        <h3 class="serif">Iniciada</h3>
-        <div class="price">Gratis</div>
-        <ul>
-          <li>Carta natal calculada al instante</li>
-          <li>Horóscopo diario por WhatsApp</li>
-          <li>Una tirada de tarot semanal</li>
-          <li>Acceso a la Revista de Lumina</li>
-        </ul>
-        <a class="btn btn-ghost" href="#tool" style="width:100%;text-align:center">Comenzar gratis</a>
-      </div>
-      <div class="plan featured reveal-on-scroll">
-        <h3 class="serif">Iluminada</h3>
-        <div style="display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-soft));color:#1a1430;font-size:11px;font-weight:600;letter-spacing:1px;padding:4px 12px;border-radius:20px;margin:6px 0 10px">✦ PRECIO DE LANZAMIENTO · TIEMPO LIMITADO</div>
-        <div class="price"><span style="text-decoration:line-through;color:var(--muted);font-size:26px;margin-right:10px">$5.99</span>$4.99 <small>/ mes</small></div>
-        <div style="font-size:13.5px;color:var(--gold-soft);font-weight:300;margin:-6px 0 16px;line-height:1.5">Una sola lectura profunda cuesta hasta $6.99. Con Iluminada tienes lecturas <b>ilimitadas</b> todo el mes.</div>
-        <ul>
-          <li>Todo lo de Iniciada, y además:</li>
-          <li>Interpretación profunda de tu carta completa</li>
-          <li>Tarot dirigido y sinastría ilimitados</li>
-          <li>Tu diario del alma: tu historia guardada</li>
-          <li>Lecturas de tránsitos y momentos clave</li>
-        </ul>
-        <a class="btn" href="#tool" style="width:100%;text-align:center">Quiero iluminarme</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="pad">
-  <div class="wrap">
-    <div class="final reveal-on-scroll">
-      <h2>Tu cielo te espera,<br><span class="gradtext">¿te atreves a leerlo?</span></h2>
-      <p>Tu carta natal gratis está a un clic. Sin costo, sin registro, sin compromiso.</p>
-      <a class="btn" href="#tool" style="font-size:21px;padding:16px 34px">✦ Revelar mi cielo ahora</a>
-    </div>
-  </div>
-</section>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">La Revista de Lumina</div>
+    <h1>Una biblioteca viva de sabiduría</h1>
+    <p>Astrología, tarot, numerología y rituales explicados con profundidad y alma. Cada guía, una puerta para leer tu cielo. Y crece cada semana.</p>
+    <div class="count" id="count">Cargando…</div>
+    <div id="lumTrio" class="lum-cover"></div>
+  </header>
+  <div class="filters" id="filters"></div>
+  <div class="mag" id="mag"></div>
+</div>
 
 <footer>
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <div class="logo"><span class="moon">☽</span> Lumina</div>
-        <p class="muted">Acompañamiento espiritual con astrología, tarot y numerología. Un proyecto DIGIWAV.</p>
-      </div>
-      <div class="fl">
-        <h5>Explora</h5>
-        <a href="#tool">Carta natal gratis</a>
-        <a href="#revista">La Revista</a>
-        <a href="#planes">Planes</a>
-      </div>
-      <div class="fl">
-        <h5>Legal</h5>
-        <a href="privacidad.html">Política de privacidad</a>
-        <a href="#">Términos de uso</a>
-        <a href="#">Contacto</a>
-      </div>
-    </div>
-    <div class="legal">
-      Solo para mayores de 18 años. Lumina ofrece contenido para la reflexión personal y el entretenimiento.
-      No sustituye asesoramiento médico, legal, financiero ni psicológico profesional. Los astros inclinan, no obligan.
-      <br>© 2026 Lumina · DIGIWAV. Todos los derechos reservados.
-    </div>
-  </div>
+  Solo para mayores de 18 años. Contenido para la reflexión personal y el entretenimiento. No sustituye asesoramiento médico, legal, financiero ni psicológico.<br>© 2026 Lumina · DIGIWAV
 </footer>
 
 <script>
-  // ---- starfield ----
-  (function(){
-    const c=document.getElementById('stars');let h='';
-    for(let i=0;i<90;i++){
-      const s=(Math.random()*2+.5).toFixed(1);
-      h+=`<span style="top:${(Math.random()*100).toFixed(1)}%;left:${(Math.random()*100).toFixed(1)}%;width:${s}px;height:${s}px;animation-delay:${(Math.random()*4).toFixed(1)}s;animation-duration:${(Math.random()*3+2).toFixed(1)}s"></span>`;
-    }
-    c.innerHTML=h;
-  })();
+  // estrellas
+  (function(){var c=document.getElementById('stars'),h='';for(var i=0;i<70;i++){var s=(Math.random()*2+.5).toFixed(1);h+='<span style="top:'+(Math.random()*100).toFixed(1)+'%;left:'+(Math.random()*100).toFixed(1)+'%;width:'+s+'px;height:'+s+'px;animation-delay:'+(Math.random()*4).toFixed(1)+'s;animation-duration:'+(Math.random()*3+2).toFixed(1)+'s"></span>';}c.innerHTML=h;})();
 
-  // ---- scroll reveal ----
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
-  document.querySelectorAll('.reveal-on-scroll').forEach((el,i)=>{el.classList.add('armed');el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el)});
-
-  // ---- trío de cartas de tarot (arte vectorial) ----
+  // trío de cartas de tarot (arte vectorial)
   (function(){
     function star(cx,cy,r,fill,pts){pts=pts||4;var v=pts*2,o=[];for(var i=0;i<v;i++){var ang=(i*(360/v)-90)*Math.PI/180,rr=(i%2===0)?r:r*0.42;o.push((cx+Math.cos(ang)*rr).toFixed(1)+','+(cy+Math.sin(ang)*rr).toFixed(1));}return '<polygon points="'+o.join(' ')+'" fill="'+fill+'"/>';}
     function card(type){var title,num,mid="";
@@ -430,77 +94,49 @@ FIN TESTIMONIALS -->
     if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left"><img src="https://mundi65.github.io/lumina/la_luna.png" alt="La Luna" loading="lazy"></div><div class="lum-tc center"><img src="https://mundi65.github.io/lumina/la_estrella.png" alt="La Estrella" loading="lazy"></div><div class="lum-tc right"><img src="https://mundi65.github.io/lumina/el_sol.png" alt="El Sol" loading="lazy"></div></div>';
   })();
 
-  // ---- ephemeris (Schlyter, exacto para signos) ----
-  const D2R=Math.PI/180,R2D=180/Math.PI;
-  const sin=a=>Math.sin(a*D2R),cos=a=>Math.cos(a*D2R);
-  const rev=x=>{x%=360;return x<0?x+360:x};
-  const atan2d=(y,x)=>rev(Math.atan2(y,x)*R2D);
-  function kepler(M,e){let E=M+R2D*e*sin(M)*(1+e*cos(M));for(let k=0;k<6;k++)E=E-(E-R2D*e*sin(E)-M)/(1-e*cos(E));return E}
-  function dayNum(Y,M,D,UT){return 367*Y-Math.floor(7*(Y+Math.floor((M+9)/12))/4)+Math.floor(275*M/9)+D-730530+UT/24}
-  function sunPos(d){const w=282.9404+4.70935e-5*d,e=0.016709-1.151e-9*d,M=rev(356.0470+0.9856002585*d);
-    const E=kepler(M,e),xv=cos(E)-e,yv=Math.sqrt(1-e*e)*sin(E),v=atan2d(yv,xv),r=Math.sqrt(xv*xv+yv*yv);
-    return{lon:rev(v+w),r,M,w}}
-  function moonPos(d,s){const N=rev(125.1228-0.0529538083*d),i=5.1454,w=rev(318.0634+0.1643573223*d),a=60.2666,e=.0549,M=rev(115.3654+13.0649929509*d);
-    const E=kepler(M,e),xv=a*(cos(E)-e),yv=a*Math.sqrt(1-e*e)*sin(E),v=atan2d(yv,xv),r=Math.sqrt(xv*xv+yv*yv);
-    const xh=r*(cos(N)*cos(v+w)-sin(N)*sin(v+w)*cos(i)),yh=r*(sin(N)*cos(v+w)+cos(N)*sin(v+w)*cos(i));
-    let lon=atan2d(yh,xh);const Ms=s.M,ws=s.w,Ls=rev(Ms+ws),Lm=rev(M+w+N),Dm=rev(Lm-Ls),F=rev(Lm-N);
-    lon+=-1.274*sin(M-2*Dm)+.658*sin(2*Dm)-.186*sin(Ms)-.059*sin(2*M-2*Dm)-.057*sin(M-2*Dm+Ms)+.053*sin(M+2*Dm)+.046*sin(2*Dm-Ms)+.041*sin(M-Ms)-.035*sin(Dm)-.031*sin(M+Ms);
-    return{lon:rev(lon)}}
-  const EL={
-    venus:{N:[76.6799,2.4659e-5],i:[3.3946,2.75e-8],w:[54.8910,1.38374e-5],a:.72333,e:[.006773,-1.302e-9],M:[48.0052,1.6021302244]},
-    marte:{N:[49.5574,2.11081e-5],i:[1.8497,-1.78e-8],w:[286.5016,2.92961e-5],a:1.523688,e:[.093405,2.516e-9],M:[18.6021,.5240207766]}
-  };
-  function planet(d,el,s){const N=rev(el.N[0]+el.N[1]*d),i=el.i[0]+el.i[1]*d,w=rev(el.w[0]+el.w[1]*d),a=el.a,e=el.e[0]+el.e[1]*d,M=rev(el.M[0]+el.M[1]*d);
-    const E=kepler(M,e),xv=a*(cos(E)-e),yv=a*Math.sqrt(1-e*e)*sin(E),v=atan2d(yv,xv),r=Math.sqrt(xv*xv+yv*yv);
-    const xh=r*(cos(N)*cos(v+w)-sin(N)*sin(v+w)*cos(i)),yh=r*(sin(N)*cos(v+w)+cos(N)*sin(v+w)*cos(i));
-    return{lon:atan2d(yh+s.r*sin(s.lon),xh+s.r*cos(s.lon))}}
-  const SIGNS=[
-    {n:"Aries",g:"♈",e:"iniciativa ardiente y coraje que abre caminos"},
-    {n:"Tauro",g:"♉",e:"constancia sensual y raíces que perduran"},
-    {n:"Géminis",g:"♊",e:"mente veloz y curiosidad que conecta mundos"},
-    {n:"Cáncer",g:"♋",e:"memoria emocional e instinto que protege"},
-    {n:"Leo",g:"♌",e:"fuego creativo y un corazón hecho para irradiar"},
-    {n:"Virgo",g:"♍",e:"precisión sagrada y servicio que perfecciona"},
-    {n:"Libra",g:"♎",e:"búsqueda de armonía y magnetismo del equilibrio"},
-    {n:"Escorpio",g:"♏",e:"intensidad transformadora y poder en lo profundo"},
-    {n:"Sagitario",g:"♐",e:"sed de horizonte y fe que expande"},
-    {n:"Capricornio",g:"♑",e:"ambición paciente y maestría del tiempo"},
-    {n:"Acuario",g:"♒",e:"visión adelantada y libertad que reinventa"},
-    {n:"Piscis",g:"♓",e:"sensibilidad oceánica y un alma que sueña"}
-  ];
-  const signOf=lon=>SIGNS[Math.floor(rev(lon)/30)];
+  var ALL = [], activeCat = "Todos";
 
-  // ---- reveal handler ----
-  const WA_NUMBER="593000000000"; // ← REEMPLAZAR por el número real de WhatsApp de Lumina
-  document.getElementById('revealBtn').addEventListener('click',()=>{
-    const name=document.getElementById('name').value.trim();
-    const date=document.getElementById('date').value;
-    const time=document.getElementById('time').value;
-    if(!date){alert("Por favor, ingresa tu fecha de nacimiento.");return;}
-    const [Y,M,D]=date.split('-').map(Number);
-    let UT=12;if(time){const [h,m]=time.split(':').map(Number);UT=h+(m||0)/60;}
-    const d=dayNum(Y,M,D,UT);
-    const sun=sunPos(d),moon=moonPos(d,sun),venus=planet(d,EL.venus,sun),mars=planet(d,EL.marte,sun);
-    const data=[
-      {g:"☉",role:"Tu identidad y tu brillo",s:signOf(sun.lon)},
-      {g:"☽",role:"Tu mundo emocional",s:signOf(moon.lon)},
-      {g:"♀",role:"Cómo amas y qué valoras",s:signOf(venus.lon)},
-      {g:"♂",role:"Tu fuego y tu deseo",s:signOf(mars.lon)}
-    ];
-    const chips=document.getElementById('chips');
-    chips.innerHTML=data.map((p,i)=>`
-      <div class="chip" style="animation-delay:${i*0.12}s">
-        <div class="g">${p.g}</div>
-        <div><div class="role">${p.role}</div>
-        <div class="pl">${p.s.g} en ${p.s.n}</div>
-        <div class="ess">${p.s.e}.</div></div>
-      </div>`).join('');
-    document.getElementById('uname').textContent=name||"viajero";
-    const msg=encodeURIComponent(`Hola Lumina ✦ Acabo de calcular mi carta en la web. Soy ${name||""} (${date}${time?" "+time:""}). Quiero mi lectura completa gratis.`);
-    document.getElementById('waBtn').href=`https://wa.me/${WA_NUMBER}?text=${msg}`;
-    const res=document.getElementById('result');res.style.display='block';
-    res.scrollIntoView({behavior:'smooth',block:'start'});
-  });
+  function render(){
+    var mag = document.getElementById('mag');
+    var list = activeCat === "Todos" ? ALL : ALL.filter(function(a){return a.cat===activeCat;});
+    if(!list.length){ mag.innerHTML = '<div class="empty">No hay artículos en esta categoría todavía.</div>'; return; }
+    mag.innerHTML = list.map(function(a){
+      var cover = a.img
+        ? '<div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/'+a.img+'" alt="'+a.title.replace(/"/g,'&quot;')+'" loading="lazy"></div>'
+        : '<div class="cover">'+(a.glyph||'✦')+'</div>';
+      return '<a class="art" href="'+a.slug+'.html">'+cover+
+        '<div class="body"><div class="cat">'+a.cat+'</div><h4 class="serif" style="font-family:\'Cormorant Garamond\',serif">'+a.title+'</h4><p>'+(a.desc||'')+'</p></div></a>';
+    }).join('');
+  }
+
+  function buildFilters(){
+    var cats = ["Todos"];
+    ALL.forEach(function(a){ if(cats.indexOf(a.cat)<0) cats.push(a.cat); });
+    document.getElementById('filters').innerHTML = cats.map(function(c){
+      return '<button data-cat="'+c+'"'+(c==="Todos"?' class="on"':'')+'>'+c+'</button>';
+    }).join('');
+    Array.prototype.forEach.call(document.querySelectorAll('.filters button'), function(b){
+      b.addEventListener('click', function(){
+        activeCat = b.getAttribute('data-cat');
+        Array.prototype.forEach.call(document.querySelectorAll('.filters button'), function(x){x.classList.remove('on');});
+        b.classList.add('on');
+        render();
+      });
+    });
+  }
+
+  fetch('articles.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      ALL = (data && data.articles) ? data.articles : [];
+      document.getElementById('count').textContent = ALL.length + ' guías y creciendo ✦';
+      buildFilters();
+      render();
+    })
+    .catch(function(){
+      document.getElementById('count').textContent = '';
+      document.getElementById('mag').innerHTML = '<div class="empty">No se pudo cargar la lista de artículos. Revisa que el archivo articles.json esté en esta carpeta.</div>';
+    });
 </script>
 </body>
 </html>
