@@ -28,7 +28,7 @@
   .lum-cover{position:relative;display:flex;justify-content:center;margin:34px 0 0}
   .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:300px;background:radial-gradient(ellipse,rgba(216,180,106,.13),transparent 70%);pointer-events:none}
   .lum-trio{position:relative;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 14px 34px rgba(0,0,0,.6))}
-  .lum-tc{width:130px}.lum-tc svg{width:100%;height:auto;display:block}
+  .lum-tc{width:130px}.lum-tc svg,.lum-tc img{width:100%;height:auto;display:block;border-radius:10px}
   .lum-tc.left{transform:rotate(-10deg) translateY(12px);margin-right:-28px;z-index:1}
   .lum-tc.right{transform:rotate(10deg) translateY(12px);margin-left:-28px;z-index:1}
   .lum-tc.center{z-index:2;transform:translateY(-10px) scale(1.08)}
@@ -44,6 +44,7 @@
   .art .cover{height:140px;display:flex;align-items:center;justify-content:center;font-size:70px;color:var(--gold);
     background:radial-gradient(circle at 50% 25%,#2a2258,#0c0a25);text-shadow:0 0 24px rgba(216,180,106,.5);transition:transform .25s}
   .art:hover .cover{transform:scale(1.06)}
+  .art .cover img{width:100%;height:100%;object-fit:cover;display:block}
   .art .body{padding:18px}
   .art .cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
   .art h4{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.25;margin-bottom:8px}
@@ -90,7 +91,7 @@
       else{title="LA LUNA";num="XVIII";mid='<mask id="cm_'+type+'"><rect x="0" y="0" width="180" height="280" fill="white"/><circle cx="104" cy="118" r="30" fill="black"/></mask><circle cx="90" cy="128" r="34" fill="url(#sun_'+type+')" mask="url(#cm_'+type+')"/>'+star(122,82,8,'#d8b46a')+star(54,168,7,'#d8b46a')+star(132,170,6,'#d8b46a')+star(70,96,5,'#d8b46a');}
       return '<svg viewBox="0 0 180 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg_'+type+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#241a52"/><stop offset="100%" stop-color="#0c0a25"/></linearGradient><radialGradient id="sun_'+type+'" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#fff8e6"/><stop offset="50%" stop-color="#d8b46a"/><stop offset="100%" stop-color="#7a5e28"/></radialGradient></defs><rect x="3" y="3" width="174" height="274" rx="16" fill="url(#bg_'+type+')" stroke="#d8b46a" stroke-width="2"/><rect x="11" y="11" width="158" height="258" rx="10" fill="none" stroke="#d8b46a" stroke-opacity="0.45" stroke-width="1"/><text x="90" y="42" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="14" letter-spacing="1.5">'+title+'</text>'+mid+'<text x="90" y="252" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="18" letter-spacing="3">'+num+'</text></svg>';}
     var t=document.getElementById('lumTrio');
-    if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left">'+card("luna")+'</div><div class="lum-tc center">'+card("estrella")+'</div><div class="lum-tc right">'+card("sol")+'</div></div>';
+    if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left"><img src="https://mundi65.github.io/lumina/la_luna.png" alt="La Luna" loading="lazy"></div><div class="lum-tc center"><img src="https://mundi65.github.io/lumina/la_estrella.png" alt="La Estrella" loading="lazy"></div><div class="lum-tc right"><img src="https://mundi65.github.io/lumina/el_sol.png" alt="El Sol" loading="lazy"></div></div>';
   })();
 
   var ALL = [], activeCat = "Todos";
@@ -100,7 +101,10 @@
     var list = activeCat === "Todos" ? ALL : ALL.filter(function(a){return a.cat===activeCat;});
     if(!list.length){ mag.innerHTML = '<div class="empty">No hay artículos en esta categoría todavía.</div>'; return; }
     mag.innerHTML = list.map(function(a){
-      return '<a class="art" href="'+a.slug+'.html"><div class="cover">'+(a.glyph||'✦')+'</div>'+
+      var cover = a.img
+        ? '<div class="cover"><img src="https://mundi65.github.io/lumina/revista/img/'+a.img+'" alt="'+a.title.replace(/"/g,'&quot;')+'" loading="lazy"></div>'
+        : '<div class="cover">'+(a.glyph||'✦')+'</div>';
+      return '<a class="art" href="'+a.slug+'.html">'+cover+
         '<div class="body"><div class="cat">'+a.cat+'</div><h4 class="serif" style="font-family:\'Cormorant Garamond\',serif">'+a.title+'</h4><p>'+(a.desc||'')+'</p></div></a>';
     }).join('');
   }
