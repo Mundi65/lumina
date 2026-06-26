@@ -19,8 +19,30 @@
 <meta name="twitter:title" content="Lumina · Astrología y Tarot por WhatsApp" />
 <meta name="twitter:description" content="Tu carta natal gratis al instante. Lecturas y horóscopo diario por WhatsApp." />
 <meta name="twitter:image" content="https://mundi65.github.io/lumina/la_estrella.png" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.85em' font-size='85'%3E%E2%98%BD%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<!-- Datos estructurados (SEO: ayuda a Google a mostrar FAQ desplegable en resultados de busqueda) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"¿La carta natal y el horóscopo son gratis de verdad?",
+     "acceptedAnswer":{"@type":"Answer","text":"Sí. Tu carta natal calculada al instante, tu horóscopo diario por WhatsApp y una tirada de tarot semanal son gratis para siempre. Solo si quieres profundizar (lecturas ilimitadas, tarot dirigido, sinastría) existe el plan Iluminada, completamente opcional."}},
+    {"@type":"Question","name":"¿Mis datos de nacimiento están seguros?",
+     "acceptedAnswer":{"@type":"Answer","text":"Sí. Tu fecha y hora de nacimiento se usan únicamente para calcular tu carta astral. No los compartimos ni los vendemos a terceros. Puedes pedirle a Lumina que borre tu historial cuando quieras."}},
+    {"@type":"Question","name":"¿Necesito instalar una aplicación?",
+     "acceptedAnswer":{"@type":"Answer","text":"No. Todo funciona dentro de WhatsApp, la aplicación que ya usas todos los días. No hay apps adicionales que descargar ni cuentas que crear."}},
+    {"@type":"Question","name":"¿Funciona en mi país?",
+     "acceptedAnswer":{"@type":"Answer","text":"Tu carta natal gratis y tu horóscopo diario funcionan desde cualquier país. Los planes de pago están disponibles hoy en Ecuador, y estamos sumando más países pronto."}},
+    {"@type":"Question","name":"¿Lumina predice mi futuro con certeza?",
+     "acceptedAnswer":{"@type":"Answer","text":"No. Lumina es un espacio de reflexión y entretenimiento para mayores de 18 años. Usamos la astrología, el tarot y la numerología como herramientas simbólicas para reflexionar, nunca como certezas sobre el destino. Los astros inclinan, no obligan."}}
+  ]
+}
+</script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
   :root{
     --night:#070615; --night2:#120d2c; --panel:#15102f; --gold:#d8b46a; --gold-soft:#ecd9ac;
     --ink:#ece9f5; --muted:#9a96b8; --line:rgba(216,180,106,.2);
@@ -160,6 +182,19 @@
   .test p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;line-height:1.5;margin-bottom:14px}
   .test .who{font-size:13px;color:var(--gold-soft);letter-spacing:.5px}
   /* final cta */
+  /* faq */
+  .faq{max-width:720px;margin:0 auto}
+  .faq details{background:rgba(7,6,21,.5);border:1px solid var(--line);border-radius:14px;
+    padding:18px 22px;margin-bottom:12px}
+  .faq summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--gold-soft);
+    list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';color:var(--gold);font-size:22px;margin-left:12px;transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{color:var(--muted);font-weight:300;font-size:15px;margin-top:12px;line-height:1.6}
+  /* trust microcopy */
+  .trust-note{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;
+    font-size:12.5px;color:var(--muted);text-align:center}
   .final{text-align:center;background:linear-gradient(160deg,rgba(34,26,80,.55),rgba(10,8,28,.85));
     border:1px solid var(--line);border-radius:28px;padding:64px 40px}
   .final h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,6vw,54px);font-weight:600;line-height:1.05;margin-bottom:18px}
@@ -206,9 +241,9 @@
 <section class="hero">
   <div class="wrap">
     <div class="orb"></div>
-    <div class="eyebrow">Astrología · Tarot · Numerología</div>
-    <h1>Tu cielo guarda un mensaje.<br><span class="gradtext">Lumina lo revela.</span></h1>
-    <p class="lead">Descubre las posiciones reales de tus astros al nacer y lo que dicen sobre tu carácter, tu amor y tu propósito. Gratis y al instante — tu lectura completa llega directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.</p>
+    <div class="eyebrow" id="heroEyebrow">Astrología · Tarot · Numerología</div>
+    <h1 id="heroH1">Tu cielo guarda un mensaje.<br><span class="gradtext">Lumina lo revela.</span></h1>
+    <p class="lead" id="heroLead">Descubre las posiciones reales de tus astros al nacer y lo que dicen sobre tu carácter, tu amor y tu propósito. Gratis y al instante — tu lectura completa llega directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.</p>
     <div class="cta-row">
       <a class="btn" href="#tool">✦ Calcular mi carta natal gratis</a>
       <a class="btn btn-ghost" href="#como">Cómo funciona</a>
@@ -238,6 +273,7 @@
         </div>
       </div>
       <button class="btn" id="revealBtn">✦ Revelar mis astros</button>
+      <div class="trust-note">🔒 Tus datos son privados — nunca los compartimos ni los vendemos.</div>
 
       <div id="result">
         <div class="chips" id="chips"></div>
@@ -364,6 +400,38 @@ FIN TESTIMONIALS -->
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="shead reveal-on-scroll">
+      <div class="eyebrow">Antes de empezar</div>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq reveal-on-scroll">
+      <details>
+        <summary>¿La carta natal y el horóscopo son gratis de verdad?</summary>
+        <p>Sí. Tu carta natal calculada al instante, tu horóscopo diario por WhatsApp y una tirada de tarot semanal son gratis para siempre. Solo si quieres profundizar (lecturas ilimitadas, tarot dirigido, sinastría) existe el plan Iluminada, completamente opcional.</p>
+      </details>
+      <details>
+        <summary>¿Mis datos de nacimiento están seguros?</summary>
+        <p>Sí. Tu fecha y hora de nacimiento se usan únicamente para calcular tu carta astral. No los compartimos ni los vendemos a terceros. Puedes pedirle a Lumina que borre tu historial cuando quieras.</p>
+      </details>
+      <details>
+        <summary>¿Necesito instalar una aplicación?</summary>
+        <p>No. Todo funciona dentro de WhatsApp, la aplicación que ya usas todos los días. No hay apps adicionales que descargar ni cuentas que crear.</p>
+      </details>
+      <details>
+        <summary>¿Funciona en mi país?</summary>
+        <p>Tu carta natal gratis y tu horóscopo diario funcionan desde cualquier país. Los planes de pago están disponibles hoy en Ecuador, y estamos sumando más países pronto.</p>
+      </details>
+      <details>
+        <summary>¿Lumina predice mi futuro con certeza?</summary>
+        <p>No. Lumina es un espacio de reflexión y entretenimiento para mayores de 18 años. Usamos la astrología, el tarot y la numerología como herramientas simbólicas para reflexionar, nunca como certezas sobre el destino. Los astros inclinan, no obligan.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section class="pad">
   <div class="wrap">
@@ -428,6 +496,49 @@ FIN TESTIMONIALS -->
       return '<svg viewBox="0 0 180 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg_'+type+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#241a52"/><stop offset="100%" stop-color="#0c0a25"/></linearGradient><radialGradient id="sun_'+type+'" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#fff8e6"/><stop offset="50%" stop-color="#d8b46a"/><stop offset="100%" stop-color="#7a5e28"/></radialGradient></defs><rect x="3" y="3" width="174" height="274" rx="16" fill="url(#bg_'+type+')" stroke="#d8b46a" stroke-width="2"/><rect x="11" y="11" width="158" height="258" rx="10" fill="none" stroke="#d8b46a" stroke-opacity="0.45" stroke-width="1"/><text x="90" y="42" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="14" letter-spacing="1.5">'+title+'</text>'+mid+'<text x="90" y="252" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="18" letter-spacing="3">'+num+'</text></svg>';}
     var t=document.getElementById('lumTrio');
     if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left"><img src="https://mundi65.github.io/lumina/la_luna.png" alt="La Luna" loading="lazy"></div><div class="lum-tc center"><img src="https://mundi65.github.io/lumina/la_estrella.png" alt="La Estrella" loading="lazy"></div><div class="lum-tc right"><img src="https://mundi65.github.io/lumina/el_sol.png" alt="El Sol" loading="lazy"></div></div>';
+  })();
+
+  // ---- mensaje dinamico segun el origen del trafico (?h=...) ----
+  // Pon ?h=mercurio (o el que corresponda) al final del link que uses en el anuncio/post de
+  // Instagram, y el titular de la landing cambiara para ser el espejo exacto de ese gancho.
+  // Sin el parametro (trafico organico/directo), se queda el titular general de siempre.
+  (function(){
+    const HOOKS = {
+      mercurio: {
+        eyebrow: "Mercurio retrógrado activo",
+        h1: 'Mercurio retrógrado ya empezó.<br><span class="gradtext">Esto es lo que significa para ti.</span>',
+        lead: 'No es superstición: es un tránsito real con un efecto medible en tu comunicación y tus decisiones. Descubre cómo te afecta según tu carta — gratis y al instante, directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.'
+      },
+      ascendente: {
+        eyebrow: "Más allá de tu signo solar",
+        h1: 'Tu signo es solo la portada.<br><span class="gradtext">Tu Ascendente cuenta otra historia.</span>',
+        lead: 'Es la cara que el mundo ve primero — y casi nadie la conoce de verdad. Calcula tu carta natal real y descúbrelo, gratis y al instante en tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.'
+      },
+      luna: {
+        eyebrow: "El astro más íntimo de tu carta",
+        h1: 'Así es como amas en realidad,<br><span class="gradtext">según tu Luna natal.</span>',
+        lead: 'Tu Sol es tu personalidad. Tu Luna es tu corazón. Descubre lo que tu Luna natal revela sobre tus emociones — gratis y al instante, directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.'
+      },
+      numerologia: {
+        eyebrow: "El número que te define",
+        h1: 'Hay un número escondido en tu fecha de nacimiento,<br><span class="gradtext">y revela tu propósito.</span>',
+        lead: 'Se llama Número de Sendero de Vida. Calcula tu carta natal y descubre qué dice de ti — gratis y al instante en tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.'
+      },
+      tarot: {
+        eyebrow: "Tu arcano personal",
+        h1: 'Cada signo guarda una carta del tarot<br><span class="gradtext">que lo refleja. ¿Cuál es la tuya?</span>',
+        lead: 'Descúbrelo junto con tu carta natal real — gratis y al instante, directo a tu <b style="color:var(--gold-soft);font-weight:500">WhatsApp</b>.'
+      }
+    };
+    const h = new URLSearchParams(window.location.search).get('h');
+    if (h && HOOKS[h]) {
+      const eyebrowEl = document.getElementById('heroEyebrow');
+      const h1El = document.getElementById('heroH1');
+      const leadEl = document.getElementById('heroLead');
+      if (eyebrowEl) eyebrowEl.textContent = HOOKS[h].eyebrow;
+      if (h1El) h1El.innerHTML = HOOKS[h].h1;
+      if (leadEl) leadEl.innerHTML = HOOKS[h].lead;
+    }
   })();
 
   // ---- ephemeris (Schlyter, exacto para signos) ----
