@@ -166,6 +166,67 @@
   .art .cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
   .art h4{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.25;margin-bottom:8px}
   .art p{color:var(--muted);font-weight:300;font-size:13.5px}
+  /* carta natal — rueda astrologica + mockup de PDF premium */
+  .chart-section{max-width:980px;margin:0 auto}
+  .chart-grid{display:grid;grid-template-columns:auto 1fr;gap:50px;align-items:start}
+  .chart-wheel-wrap{position:relative;width:480px;height:446px;margin:0 auto;flex-shrink:0}
+  .chart-wheel-wrap::before{content:'';position:absolute;inset:10px;border-radius:50%;
+    background:radial-gradient(circle,rgba(216,180,106,.14),transparent 65%);pointer-events:none}
+  .chart-wheel-wrap svg{position:relative;filter:drop-shadow(0 10px 30px rgba(0,0,0,.5))}
+  .chart-copy .badge{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+    color:#1a1430;font-size:11px;font-weight:600;letter-spacing:1.5px;padding:5px 14px;border-radius:20px;margin-bottom:16px}
+  .chart-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4.2vw,38px);font-weight:600;line-height:1.15;margin-bottom:14px}
+  .chart-copy p{color:var(--muted);font-weight:300;font-size:15.5px;margin-bottom:22px}
+  .pdf-mock{background:linear-gradient(160deg,rgba(34,26,80,.5),rgba(10,8,28,.8));border:1px solid var(--line);
+    border-radius:16px;padding:20px 22px;margin-bottom:22px}
+  .pdf-mock .ph{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .pdf-mock .ph .ic{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));
+    display:flex;align-items:center;justify-content:center;font-size:14px;color:#1a1430;flex-shrink:0}
+  .pdf-mock .ph .tt{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--gold-soft)}
+  .pdf-mock .ph .tt small{display:block;font-family:'Jost';font-size:11px;color:var(--muted);font-weight:300}
+  .pdf-mock .ln{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:13px;color:#ccc8de;font-weight:300}
+  .pdf-mock .ln .ck{color:var(--gold);font-size:13px}
+  @media(max-width:780px){.chart-grid{grid-template-columns:1fr}.chart-wheel-wrap{width:380px;height:353px}}
+  @media(max-width:420px){.chart-wheel-wrap{width:320px;height:297px}}
+  /* whatsapp preview mockup */
+  .wa-section{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .wa-copy .eyebrow{margin-bottom:14px}
+  .wa-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.5vw,42px);font-weight:600;line-height:1.12;margin-bottom:16px}
+  .wa-copy p{color:var(--muted);font-weight:300;font-size:16px;margin-bottom:26px}
+  .wa-copy .feat{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+  .wa-copy .feat .ic{color:var(--gold);font-size:18px;line-height:1.4}
+  .wa-copy .feat .tx b{color:var(--gold-soft);font-weight:500}
+  .wa-copy .feat .tx{color:var(--muted);font-weight:300;font-size:14.5px;line-height:1.5}
+  .phone{position:relative;background:linear-gradient(160deg,#1b1440,#0a0820);border:1px solid var(--line);
+    border-radius:34px;padding:14px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 1px rgba(216,180,106,.08);
+    max-width:360px;margin:0 auto}
+  .phone-head{display:flex;align-items:center;gap:10px;padding:8px 10px 14px;border-bottom:1px solid var(--line)}
+  .phone-head .av{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff8e6,var(--gold) 55%,#6b5320);
+    display:flex;align-items:center;justify-content:center;font-size:16px;color:#1a1430;flex-shrink:0}
+  .phone-head .nm{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ink)}
+  .phone-head .st{font-size:11.5px;color:#7ee08a}
+  .phone-body{padding:18px 6px 6px;display:flex;flex-direction:column;gap:12px;min-height:360px}
+  .wa-msg{max-width:82%;padding:10px 14px;border-radius:16px;font-size:14px;line-height:1.5;font-weight:300;
+    opacity:0;transform:translateY(8px);animation:waIn .5s ease forwards}
+  .wa-msg.in{align-self:flex-start;background:rgba(216,180,106,.13);border:1px solid rgba(216,180,106,.22);
+    color:var(--ink);border-bottom-left-radius:4px}
+  .wa-msg.out{align-self:flex-end;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);
+    color:#d8d5e8;border-bottom-right-radius:4px}
+  .wa-msg .tm{display:block;margin-top:5px;font-size:10.5px;color:var(--muted);text-align:right}
+  .wa-msg.out .tm{color:#8a86ac}
+  .wa-msg .tm .chk{color:#6fd0f2;margin-left:3px}
+  @keyframes waIn{to{opacity:1;transform:translateY(0)}}
+  .typing{align-self:flex-start;display:flex;gap:4px;padding:12px 16px;background:rgba(216,180,106,.1);
+    border-radius:16px;border-bottom-left-radius:4px;opacity:0;animation:waIn .5s ease forwards}
+  .typing span{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:bounce 1.2s infinite ease-in-out}
+  .typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+  @keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+  @media(max-width:780px){.wa-section{grid-template-columns:1fr;gap:36px}.phone{max-width:320px}}
+  /* diario del alma preview (dentro del plan Iluminada) */
+  .diario-preview{margin:18px 0 22px;background:rgba(7,6,21,.55);border:1px dashed var(--line);border-radius:14px;padding:14px 16px}
+  .diario-preview .dp-label{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .diario-preview .dp-row{display:flex;gap:10px;font-size:12.5px;color:var(--muted);font-weight:300;padding:4px 0}
+  .diario-preview .dp-row b{color:var(--gold-soft);font-weight:500;flex-shrink:0}
   /* tarot trio */
   .lum-cover{position:relative;display:flex;justify-content:center;margin:0 0 54px}
   .lum-cover::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:320px;background:radial-gradient(ellipse,rgba(216,180,106,.14),transparent 70%);pointer-events:none}
@@ -287,6 +348,33 @@
   </div>
 </section>
 
+<!-- CARTA NATAL COMPLETA (producto premium) -->
+<section class="pad" id="carta-completa">
+  <div class="wrap">
+    <div class="chart-section reveal-on-scroll">
+      <div class="chart-grid">
+        <div class="chart-wheel-wrap" id="chartWheel"></div>
+        <div class="chart-copy">
+          <div class="badge">✦ TU CARTA NATAL COMPLETA</div>
+          <h2>Esto es lo que hay detrás<br><span class="gradtext">del umbral gratuito.</span></h2>
+          <p>Lo que ves arriba (Sol, Luna, Venus, Marte) es solo la entrada. Tu carta natal completa trae los 10 planetas ubicados en su casa exacta, tus aspectos principales y una interpretación profunda — en un documento que puedes guardar para siempre.</p>
+          <div class="pdf-mock">
+            <div class="ph">
+              <div class="ic">✦</div>
+              <div class="tt">Tu Carta Natal<small>PDF · diseño Lumina · 8-12 páginas</small></div>
+            </div>
+            <div class="ln"><span class="ck">✓</span> Los 10 planetas en su signo y casa exacta</div>
+            <div class="ln"><span class="ck">✓</span> Tu Ascendente y sus dominantes</div>
+            <div class="ln"><span class="ck">✓</span> Aspectos principales, explicados sin tecnicismos</div>
+            <div class="ln"><span class="ck">✓</span> Interpretación escrita por Lumina, no una tabla fría</div>
+          </div>
+          <a class="btn" href="#tool">Calcular mi carta gratis para empezar →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- COMO FUNCIONA -->
 <section class="pad" id="como">
   <div class="wrap">
@@ -299,6 +387,32 @@
       <div class="step reveal-on-scroll"><div class="num">I</div><h4 class="serif">Dinos cuándo naciste</h4><p>Con tu nombre y tu fecha de nacimiento calculamos las posiciones reales de tus planetas.</p></div>
       <div class="step reveal-on-scroll"><div class="num">II</div><h4 class="serif">Recibe tu lectura</h4><p>Lumina interpreta tu carta con erudición y calidez, explicando el porqué de cada revelación.</p></div>
       <div class="step reveal-on-scroll"><div class="num">III</div><h4 class="serif">Acompaña tu camino</h4><p>Tu horóscopo diario, tiradas de tarot y numerología, siempre a un mensaje de distancia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ASI SE SIENTE HABLAR CON LUMINA (mockup real de conversacion) -->
+<section class="pad" id="conversacion">
+  <div class="wrap">
+    <div class="wa-section">
+      <div class="phone reveal-on-scroll">
+        <div class="phone-head">
+          <div class="av">☽</div>
+          <div>
+            <div class="nm serif">Lumina</div>
+            <div class="st">en línea</div>
+          </div>
+        </div>
+        <div class="phone-body" id="waChat"></div>
+      </div>
+      <div class="wa-copy reveal-on-scroll">
+        <div class="eyebrow">Así se siente, de verdad</div>
+        <h2>No es un chatbot genérico.<br><span class="gradtext">Es una conversación que te conoce.</span></h2>
+        <p>Esto es exactamente lo que llega a tu WhatsApp — sin actuación, sin exagerar. Así habla Lumina.</p>
+        <div class="feat"><div class="ic">✦</div><div class="tx"><b>Cálculo real, no genérico.</b> Tu Sol, tu Luna y tu Ascendente salen de la posición real de los astros el día que naciste.</div></div>
+        <div class="feat"><div class="ic">✦</div><div class="tx"><b>Recuerda tu proceso.</b> Tu Diario del Alma guarda lo que compartes, para que la próxima conversación siga donde quedó — no empieza de cero cada vez.</div></div>
+        <div class="feat"><div class="ic">✦</div><div class="tx"><b>Acompaña, no presiona.</b> Lumina ofrece profundizar cuando ya diste valor, nunca en medio de un momento vulnerable.</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -394,6 +508,11 @@ FIN TESTIMONIALS -->
           <li>Tu diario del alma: tu historia guardada</li>
           <li>Lecturas de tránsitos y momentos clave</li>
         </ul>
+        <div class="diario-preview">
+          <div class="dp-label">✦ Tu diario del alma — ejemplo</div>
+          <div class="dp-row"><b>12 may</b><span>Empezaste una etapa de decisiones sobre tu trabajo.</span></div>
+          <div class="dp-row"><b>3 jul</b><span>Volviste a preguntar por esa relación — Lumina lo recordó.</span></div>
+        </div>
         <a class="btn" href="#tool" style="width:100%;text-align:center">Quiero iluminarme</a>
       </div>
     </div>
@@ -496,6 +615,139 @@ FIN TESTIMONIALS -->
       return '<svg viewBox="0 0 180 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg_'+type+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#241a52"/><stop offset="100%" stop-color="#0c0a25"/></linearGradient><radialGradient id="sun_'+type+'" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#fff8e6"/><stop offset="50%" stop-color="#d8b46a"/><stop offset="100%" stop-color="#7a5e28"/></radialGradient></defs><rect x="3" y="3" width="174" height="274" rx="16" fill="url(#bg_'+type+')" stroke="#d8b46a" stroke-width="2"/><rect x="11" y="11" width="158" height="258" rx="10" fill="none" stroke="#d8b46a" stroke-opacity="0.45" stroke-width="1"/><text x="90" y="42" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="14" letter-spacing="1.5">'+title+'</text>'+mid+'<text x="90" y="252" text-anchor="middle" fill="#ecd9ac" font-family="Cormorant Garamond, serif" font-size="18" letter-spacing="3">'+num+'</text></svg>';}
     var t=document.getElementById('lumTrio');
     if(t) t.innerHTML='<div class="lum-trio"><div class="lum-tc left"><img src="https://mundi65.github.io/lumina/la_luna.png" alt="La Luna" loading="lazy"></div><div class="lum-tc center"><img src="https://mundi65.github.io/lumina/la_estrella.png" alt="La Estrella" loading="lazy"></div><div class="lum-tc right"><img src="https://mundi65.github.io/lumina/el_sol.png" alt="El Sol" loading="lazy"></div></div>';
+  })();
+
+  // ---- rueda de carta natal (arte vectorial, ilustrativa, estilo carta profesional) ----
+  (function(){
+    const wrap = document.getElementById('chartWheel');
+    if (!wrap) return;
+    const SIGN_GLYPHS = ['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'];
+    const PLANETS = [ // {glyph, angulo ilustrativo en grados, no es un calculo real}
+      {g:'☉', a:20},{g:'☽', a:95},{g:'☿', a:140},{g:'♀', a:200},
+      {g:'♂', a:255},{g:'♃', a:305},{g:'♄', a:345}
+    ];
+    const cx=280, cy=210, rOuter=128, rZodiac=104, rHouse=62, rPlanet=38;
+    const pt=(ang,r)=>{const rad=(ang-90)*Math.PI/180; return [cx+Math.cos(rad)*r, cy+Math.sin(rad)*r];};
+    const fx=n=>n.toFixed(1);
+
+    let svg = `<svg viewBox="0 0 560 520" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="chartBg" cx="50%" cy="45%" r="70%">
+          <stop offset="0%" stop-color="#1c1648"/><stop offset="100%" stop-color="#08061a"/>
+        </radialGradient>
+      </defs>
+      <circle cx="${cx}" cy="${cy}" r="${rOuter+7}" fill="none" stroke="#ecd9ac" stroke-opacity=".5" stroke-width="1"/>
+      <circle cx="${cx}" cy="${cy}" r="${rOuter}" fill="url(#chartBg)" stroke="#d8b46a" stroke-width="1.5"/>
+      <circle cx="${cx}" cy="${cy}" r="${rZodiac}" fill="none" stroke="#d8b46a" stroke-opacity=".45" stroke-width="1"/>
+      <circle cx="${cx}" cy="${cy}" r="${rHouse}" fill="none" stroke="#d8b46a" stroke-opacity=".3" stroke-width="1"/>`;
+
+    // divisiones de las 12 casas (lineas del anillo de casas al borde exterior)
+    for(let i=0;i<12;i++){const a=i*30; const [x1,y1]=pt(a,rHouse); const [x2,y2]=pt(a,rOuter);
+      svg += `<line x1="${fx(x1)}" y1="${fx(y1)}" x2="${fx(x2)}" y2="${fx(y2)}" stroke="#d8b46a" stroke-opacity=".22" stroke-width="1"/>`;}
+
+    // eje Ascendente-Descendente (horizontal) y Medio Cielo-Bajo Cielo (vertical), estilo carta profesional
+    const axisColor = "#e0899e";
+    [[270,90],[0,180]].forEach(([a1,a2])=>{
+      const [x1,y1]=pt(a1,rOuter), [x2,y2]=pt(a2,rOuter);
+      svg += `<line x1="${fx(x1)}" y1="${fx(y1)}" x2="${fx(x2)}" y2="${fx(y2)}" stroke="${axisColor}" stroke-opacity=".55" stroke-width="1.3"/>`;
+    });
+
+    // numeros de casas (1-12), numerados en sentido antihorario desde el Ascendente (270°, a la izquierda)
+    for(let k=1;k<=12;k++){const a=(255-(k-1)*30+360)%360; const [x,y]=pt(a,(rZodiac+rHouse)/2+4);
+      svg += `<text x="${fx(x)}" y="${fx(y)}" text-anchor="middle" dominant-baseline="middle" fill="#9a96b8" font-size="11" font-family="Jost">${k}</text>`;}
+
+    // glifos del zodiaco
+    for(let i=0;i<12;i++){const a=i*30+15; const [x,y]=pt(a,(rOuter+rZodiac)/2);
+      svg += `<text x="${fx(x)}" y="${fx(y)}" text-anchor="middle" dominant-baseline="middle" fill="#ecd9ac" font-size="19" font-weight="600">${SIGN_GLYPHS[i]}</text>`;}
+
+    // lineas de aspecto ilustrativas, en 3 tonos (evocando el patron de "estrella" de una carta real)
+    const aspectPairs = [[0,3,'#d8b46a'],[1,4,'#a78bfa'],[2,5,'#e896b8'],[3,6,'#a78bfa'],[0,5,'#d8b46a']];
+    let aspectMid = null;
+    aspectPairs.forEach(([i,j,col],idx)=>{const p1=PLANETS[i],p2=PLANETS[j]; const [x1,y1]=pt(p1.a,rPlanet); const [x2,y2]=pt(p2.a,rPlanet);
+      if(idx===0) aspectMid=[(x1+x2)/2,(y1+y2)/2];
+      svg += `<line x1="${fx(x1)}" y1="${fx(y1)}" x2="${fx(x2)}" y2="${fx(y2)}" stroke="${col}" stroke-opacity=".4" stroke-width="1.1"/>`;});
+
+    // planetas
+    PLANETS.forEach(p=>{const [x,y]=pt(p.a,rPlanet);
+      svg += `<circle cx="${fx(x)}" cy="${fx(y)}" r="12" fill="#0c0a25" stroke="#d8b46a" stroke-width="1.2"/>
+        <text x="${fx(x)}" y="${fx(y)}" text-anchor="middle" dominant-baseline="middle" fill="#d8b46a" font-size="15" font-weight="600">${p.g}</text>`;});
+    svg += `<circle cx="${cx}" cy="${cy}" r="3" fill="#d8b46a"/>`;
+
+    // ---- llamadas explicativas (estilo infografia: titulo + explicacion breve, linea punteada al elemento) ----
+    function callout(labelX,labelY,anchor,title,expl,pointX,pointY){
+      let t = `<g font-family="Jost">`;
+      t += `<line x1="${fx(labelX)}" y1="${fx(labelY+3)}" x2="${fx(pointX)}" y2="${fx(pointY)}" stroke="#d8b46a" stroke-opacity=".55" stroke-width="1" stroke-dasharray="3,3"/>`;
+      t += `<circle cx="${fx(pointX)}" cy="${fx(pointY)}" r="2.6" fill="#ecd9ac"/>`;
+      t += `<text x="${fx(labelX)}" y="${fx(labelY)}" text-anchor="${anchor}" fill="#ecd9ac" font-size="11.5" letter-spacing=".6" font-weight="600">${title}</text>`;
+      expl.forEach((ln,i)=>{
+        t += `<text x="${fx(labelX)}" y="${fx(labelY+18+i*13)}" text-anchor="${anchor}" fill="#9a96b8" font-size="10" font-weight="300">${ln}</text>`;
+      });
+      t += `</g>`;
+      return t;
+    }
+    const [signPtX,signPtY] = pt(15,(rOuter+rZodiac)/2);
+    svg += callout(20, 26, 'start', 'SIGNOS ZODIACALES',
+      ['El "estilo" con el que','cada planeta se expresa','en tu carta.'], signPtX, signPtY);
+
+    const [housePtX,housePtY] = pt(75,(rZodiac+rHouse)/2+4);
+    svg += callout(540, 26, 'end', 'CASAS',
+      ['Los 12 sectores de tu','vida —trabajo, amor,','hogar— donde actúa','cada energía.'], housePtX, housePtY);
+
+    const [ascPtX,ascPtY] = pt(270,rOuter);
+    svg += callout(20, 372, 'start', 'ASCENDENTE',
+      ['Tu primera impresión:','el signo que nacía en','el horizonte al nacer.'], ascPtX, ascPtY);
+
+    const [descPtX,descPtY] = pt(90,rOuter);
+    svg += callout(540, 372, 'end', 'DESCENDENTE',
+      ['Opuesto al Ascendente:','tus relaciones y lo','que buscas en otros.'], descPtX, descPtY);
+
+    if(aspectMid) svg += callout(280, 460, 'middle', 'LÍNEAS DE ASPECTO',
+      ['Conexiones entre tus planetas:','cómo dialogan las partes de ti.'], aspectMid[0], aspectMid[1]);
+
+    svg += `</svg>`;
+    wrap.innerHTML = svg;
+  })();
+
+  // ---- mockup animado de conversacion de WhatsApp ----
+  // Guion representativo del tono real de Lumina (ver prompt-cerebro): calida, cercana,
+  // ofrece continuidad via el Diario del Alma, cierra con una pregunta reflexiva.
+  (function(){
+    const chat = document.getElementById('waChat');
+    if (!chat) return;
+    const script = [
+      {who:'out', text:'Hola Lumina, quiero saber qué dice mi carta natal 🌙', time:'10:41'},
+      {who:'in',  text:'¡Qué lindo que estés aquí! Para trazar tu carta necesito tu fecha, hora y lugar de nacimiento. Con la hora puedo ver también dónde estaba tu Luna — el astro de tus emociones. ¿Los tienes a mano?', time:'10:41'},
+      {who:'out', text:'15 de marzo 1996, 7:40am, Guayaquil', time:'10:42', read:true},
+      {who:'in',  text:'Perfecto ✨ Tu Sol está en Piscis y tu Luna en Escorpio — sientes con una intensidad que pocos ven por fuera. Guardo esto en tu Diario del Alma, así la próxima vez seguimos donde quedamos. ¿Quieres que miremos qué dice tu Ascendente también?', time:'10:42'}
+    ];
+    let played = false;
+    function playScript(){
+      if (played) return; played = true;
+      let delay = 200;
+      script.forEach((m)=>{
+        const typingDelay = m.who==='in' ? 900 : 0;
+        if (m.who==='in'){
+          setTimeout(()=>{
+            const ty=document.createElement('div'); ty.className='typing'; ty.id='waTyping';
+            ty.innerHTML='<span></span><span></span><span></span>';
+            chat.appendChild(ty);
+          }, delay);
+        }
+        delay += typingDelay;
+        setTimeout(()=>{
+          const old=document.getElementById('waTyping'); if(old) old.remove();
+          const el=document.createElement('div');
+          el.className='wa-msg '+m.who;
+          const checks = m.read ? ' <span class="chk">✓✓</span>' : (m.who==='out' ? ' ✓✓' : '');
+          el.innerHTML = m.text + '<span class="tm">'+m.time+checks+'</span>';
+          chat.appendChild(el);
+          chat.scrollTop = chat.scrollHeight;
+        }, delay);
+        delay += 1100;
+      });
+    }
+    const waIo = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting) playScript();})},{threshold:.35});
+    waIo.observe(chat);
   })();
 
   // ---- mensaje dinamico segun el origen del trafico (?h=...) ----
